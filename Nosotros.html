@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<title>Muestras, trabajo de conservación y reservorio del Museo Histórico Regional de la Colonia San José</title>
+	<meta name="description" content="En el Museo Histórico Regional de la Colonia San José podrás encontrar diferentes muestras de objetos traídos por los inmigrantes del siglo XIX que llegaron a Entre Ríos. En el mismos se realizan minuciosos trabajos de conservación y restauración para preservar los miles de objetos que en el se albergan. Te invitamos a conocerlo.">
+	<meta name="keywords" content=" Museo, Colonia San José, inmigración, muestras, conservación, restauración">
+</head>
+<body>
+	<!--Barra de Menu-->
+	<header id="header" class="d-flex flex-column">
+		<div class="d-flex flex-row justify-content-around align-items-center botoneraSuperior">
+			<div class=" d-flex-row align-items-center menu">
+				<div class="dropdown">
+					<button class=" d-flex flex-row menu btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<div class="d-flex flex-row align-items-center"><img src="Media/menu.png" alt="Menu"></div>
+						<div >Menu</div>
+					</button>
+					<div class="dropdown-menu menuStile" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item " href="Index.html">Inicio</a>
+						<a class="dropdown-item barraItems" href="Nosotros.html">Nosotros</a>
+						<a class="dropdown-item barraItems" href="Socios.html">Socios</a>
+						<a class="dropdown-item barraItems" href="Visitas.html">Visitas</a>
+						<a class="dropdown-item barraItems" href="Contacto.html">Contacto</a>
+						<a class="dropdown-item barraItems" href="Tienda.html">Tienda</a>
+						<a class="dropdown-item barraItems " href="Visitas.html">Entradas</a>
+					</div>
+				</div>
+			</div>
+			<div id="logo">
+				<a href="Index.html" > <img src="Media/Escudos/EscudoMuseo.png" alt="Logo Museo" class="img-fluid" style="max-height: 60px; min-height: 50px;"></a>
+			</div>
+			<div class="d-flex flex-row-reverse justify-content-between tienda">
+				<div class="tienda__titulo">
+					<a href="Tienda.html" style="text-decoration: none ; color: white; padding: 2px">Tienda</a>
+				</div>
+				<div>
+					<img src="Media/tienda.png" alt="tienda">
+				</div>
+			</div>
+			<div class=" d-flex flex-row justify-content-between align-items-center entradas">
+				<div class="d-flex flex-row align-items-center mr-1"><img src="Media/ticket.png" alt="entrada"></div>
+				<div><a href="Visitas.html" style="text-decoration: none; color: white">Entradas<a/></div>
+				</div>
+				<div class="buscar buscador">
+					<form class="form-inline buscador">
+						<input class="form-control mr-sm-2 buscador" type="search" placeholder="Buscar" aria-label="Search">
+					</form>
+				</div>
+			</div>
+			<div id="botoneraInferior" class=" d-flex flex-row justify-content-around botoneraInferior">
+				<ul class=" d-flex flex-row justify-content-center p-0 m-0 w-100">
+					<li class="mr-5"><a href="Index.html">Inicio</a></li>
+					<li class="mr-5"><a class="seccionActiva" href="Nosotros.html">Nosotros</a></li>
+					<li class="mr-5"><a href="Socios.html">Socios</a></li>
+					<li class="mr-5"><a href="Visitas.html">Visitas</a></li>
+					<li ><a  href="Contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!--Contenido Principal-->
+	<div id="muestras" class="d-flex flex-column justify-content-center fondoNosotros">
+		<div class=" d-flex justify-content-center align-items-center fondoBlanco p-3">
+			<div class="col-6 d-flex flex-column justify-content-center mediaMobile">
+				<h2 class="tituloRojo">Muestras</h2>
+				<p>El Museo posee dos espacios definidos perfectamente donde se realizan las exposiciones. Una muestra estable donde se transita de manera tal que el visitante pueda introducirse en la historia regional y aprehender las tradiciones de los inmigrantes  a través de la diagramación y guión museográfico y de cada objeto donado.</p>
+				<P>Acorde a las necesidades de los visitantes y los intereses de los descendientes, los objetos se van rotando temporalmente en diferentes muestras temáticas. Es así como el sector ubicado en la casa histórica es el lugar indicado para exhibir y poner en valor el acervo museológico que se va incrementando por las constantes donaciones. 
+				</p>
+			</div>
+			<div id="carouselMuestra" class="carousel slide col-6" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="Media/muestra1.jpg" class="d-block  w-100" alt="Muestra personajes ilustres">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra2.jpg" class="d-block  w-100" alt="Muestra objetos de inmigrantes">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra3.jpg" class="d-block  w-100" alt="Muestra banda y religion">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra4.jpg" class="d-block  w-100" alt="Muestra camara de fotos">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra5.jpg" class="d-block  w-100" alt="Muestra herreria">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra6.jpg" class="d-block  w-100" alt="Muestra cocina">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra8.jpg" class="d-block  w-100" alt="Muestra cuarto de niños">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra9.jpg" class="d-block  w-100" alt="Muestra agricultura">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra10.jpg" class="d-block  w-100" alt="Muestra objetos de oficios">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra11.jpg" class="d-block  w-100" alt="Muestra baules antiguos">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra12.jpg" class="d-block  w-100" alt="Entrada a exposición">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra13.jpg" class="d-block  w-100" alt="Auto antiguo">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra15.jpg" class="d-block  w-100" alt="Muestra cristalería">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra16.jpg" class="d-block  w-100" alt="Muestra bajilla antigua">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/muestra17.jpg" class="d-block  w-100" alt="Muestra carruaje antigua">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselMuestra" role="button" data-slide="next">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselMuestra" role="button" data-slide="prev">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="conservacion"  class="d-flex flex-column justify-content-center fondoNosotros">
+		<div class=" d-flex flex-row-reverse justify-content-center align-items-center fondoBlanco p-3">
+			<div class="col-6 d-flex flex-column justify-content-center mediaMobile">
+				<h2 class="tituloRojo">Conservación y Restauración</h2>
+				<p> La conservación preventiva es la columna vertebral del Museo, ya que las prestezas que se realizan están centradas en otorgarles a los objetos una vida útil más larga prolongada en el tiempo. Cada objeto, es tratado con la importancia que posee ya que su impronta especifica es el haber pertenecido a los inmigrantes o utilizado en la Colonia por sus descendientes.</p>
+				<p>El taller de conservación es donde los objetos son acondicionados, fichados, limpiados y puesto en valor para su correcta exhibición. Los visitantes, al tiempo que recorren las salas y la muestra temporaria, pueden observar, a través de una zona vidriada, el lugar que se utiliza para examinar los objetos y realizar trabajos de investigación con los documentos existentes en la Reserva Técnica y que por su antigüedad no es recomendable su traslado a otro sector. </p>
+			</div>
+			<div id="carouselConservacion" class="carousel slide col-6" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="Media/conservacion1.jpg" class="d-block  w-100" alt="Taller de conservación y restauración">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/conservacion2.jpg" class="d-block  w-100" alt="MRestauración de libro">
+					</div>
+					<div class="carousel-item">
+						<img src="Media/conservacion3.jpg" class="d-block  w-100" alt="Restauración de perfumero">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselConservacion" role="button" data-slide="next">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselConservacion" role="button" data-slide="prev">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="reserva" class="d-flex flex-column justify-content-center fondoNosotros">
+		<div class=" d-flex justify-content-center align-items-center fondoBlanco p-3">
+			<div class="col-6 d-flex flex-column justify-content-center mediaMobile">
+				<h2 class="tituloRojo">Reserva Técnica</h2>
+				<p>La Reserva Técnica es un espacio con la climatización acorde a las exigencias de conservación de todos los objetos que se encuentran resguardados en su interior, está provisto de muebles específicos donde el acervo se deposita y se resguarda para luego ser expuesto en diferentes muestras museológicas.<p>
+					<p>Existen visitas especiales a dicho lugar, donde se pueden apreciar dicho lugar, ya que lo que se exhibe en las muestras, corresponde a una pequeña parte de todos los objetos con los que cuenta en Museo. Si querés conocerlo, consulta por la próxima edición de "El Museo que no se ve”.</p>
+				</div>
+				<div id="carouselReserva" class="carousel slide col-6" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="Media/reserva1.jpg" class="d-block  w-100" alt="Cuadros en la reserva técnica">
+						</div>
+						<div class="carousel-item">
+							<img src="Media/reserva2.jpg" class="d-block  w-100" alt="Pasillo reserva técnica">
+						</div>
+						<div class="carousel-item">
+							<img src="Media/reserva3.jpg" class="d-block  w-100" alt="Cuadros en la reserva técnica 2">
+						</div>
+						<div class="carousel-item">
+							<img src="Media/reserva4.jpg" class="d-block  w-100" alt="Auto en la reserva técnica">
+						</div>
+						<div class="carousel-item">
+							<img src="Media/reserva5.jpg" class="d-block  w-100" alt="Documentos en la reserva técnica">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselReserva" role="button" data-slide="next">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselReserva" role="button" data-slide="prev">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--Footer-->
+		<div>
+			<footer id="footer">
+				<div class=" d-flex flex-row justify-content-center footer__caja">
+					<div class="footer__logo"><a href="Index.html" > <img src="Media/Escudos/EscudoMuseo.png" alt="Logo Museo" height="60px"></a></div>
+				</div>
+				<div class="footer__grid">
+					<div id="enlaces" class="footer__enlaces">
+						<ul>
+							<li><h4 class="footer__tituloEnlaces">Inicio</h4></li>
+							<li><a href="Index.html#colonia">La Colonia</a></li>
+							<li><a href="Index.html#fundacion">Fundación</a></li>
+							<li><a href="Index.html#museo">El Museo</a></li>
+						</ul>
+						<ul>
+							<li><h4 class="footer__tituloEnlaces">Nosotros</h4></li>
+							<li><a href="Nosotros.html#muestras">Muestras</a></li>
+							<li><a href="Nosotros.html#conservacion">Conservación y restauración</a></li>
+							<li><a href="Nosotros.html#reserva">Reserva Técnica</a></li>
+						</ul>
+						<ul>
+							<li><h4 class="footer__tituloEnlaces">Socios</h4></li>
+							<li><a href="Socios.html#asociacion">La asociación</a></li>
+							<li><a href="Socios.html#eventos">Eventos</a></li>
+							<li><a href="Socios.html#entidades">Entidades asociadas</a></li>
+						</ul>
+						<ul>
+							<li><h4 class="footer__tituloEnlaces">Visitas</h4></li>
+							<li><a href="Visitas.html#horariosTarifas">Horarios y tarifas</a></li>
+							<li><a href="Visitas.html#guiadas">Visitas guiadas</a></li>
+							<li><a href="Visitas.html#accesibilidad">Museo accesible</a></li>
+							<li><a href="Visitas.html#testimonios">Testimonios</a></li>
+						</ul>
+					</div>
+					<div class="footer__redes d-flex justify-content-around">
+						<div class="d-flex flex-row  align-items-center">	
+							<a href="https://www.facebook.com/museohistorico.sanjose" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"><path d="M12.001,2.002c-5.522,0-9.999,4.477-9.999,9.999c0,4.99,3.656,9.126,8.437,9.879v-6.988h-2.54v-2.891h2.54V9.798	c0-2.508,1.493-3.891,3.776-3.891c1.094,0,2.24,0.195,2.24,0.195v2.459h-1.264c-1.24,0-1.628,0.772-1.628,1.563v1.875h2.771	l-0.443,2.891h-2.328v6.988C18.344,21.129,22,16.992,22,12.001C22,6.479,17.523,2.002,12.001,2.002z"/></svg></a>
+						</div>
+						<div class="d-flex flex-row  align-items-center">	
+							<a href="https://instagram.com/museohist.sanjose?utm_medium" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"><path d="M20.947,8.305c-0.011-0.757-0.151-1.508-0.419-2.216c-0.469-1.209-1.424-2.165-2.633-2.633 c-0.699-0.263-1.438-0.404-2.186-0.42C14.747,2.993,14.442,2.981,12,2.981s-2.755,0-3.71,0.055 c-0.747,0.016-1.486,0.157-2.185,0.42C4.896,3.924,3.94,4.88,3.472,6.089C3.209,6.788,3.067,7.527,3.053,8.274 c-0.043,0.963-0.056,1.268-0.056,3.71s0,2.754,0.056,3.71c0.015,0.748,0.156,1.486,0.419,2.187 c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45c0.963,0.043,1.268,0.056,3.71,0.056s2.755,0,3.71-0.056 c0.747-0.015,1.486-0.156,2.186-0.419c1.209-0.469,2.164-1.425,2.633-2.633c0.263-0.7,0.404-1.438,0.419-2.187 c0.043-0.962,0.056-1.267,0.056-3.71C21.003,9.572,21.003,9.262,20.947,8.305z M11.994,16.602c-2.554,0-4.623-2.069-4.623-4.623 s2.069-4.623,4.623-4.623c2.552,0,4.623,2.069,4.623,4.623S14.546,16.602,11.994,16.602z M16.801,8.263 c-0.597,0-1.078-0.482-1.078-1.078s0.481-1.078,1.078-1.078c0.595,0,1.077,0.482,1.077,1.078S17.396,8.263,16.801,8.263z"/><circle cx="11.994" cy="11.979" r="3.003"/></svg></a>
+						</div>
+					</div>
+					<div class="footer__asociarse d-flex justify-content-center align-items-center">
+						<button type="button" href="Asociarse.html" class="btn btn-lg boton"><a href="Asociarse.html">Hazte amigo!</a></button>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="iconoContacto">
+			<a href="Contacto.html"> <img src="Media/letra.png" alt=""></a>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>	
+	</body>
+</body>
+</html>
