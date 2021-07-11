@@ -1,0 +1,23 @@
+.fondoTienda{
+	height: 100vh; 	
+	background-image: url(../Media/Fondos/DSCN6816.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 3px;
+	overflow: hidden;
+}
+
+.tituloTienda{
+	margin-top: 8rem;
+	background-color: rgba(225, 225, 225, 0.9);
+	text-align: center;
+	
+}
+.cajaTienda{
+	background-color: rgba(225, 225, 225, 0.9);
+	color: $primario;
+	font-family: $fuente;
+	font-weight: $fuente-bold;
+	text-align: center;
+}

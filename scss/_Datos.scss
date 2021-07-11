@@ -1,0 +1,17 @@
+.fondoDatos{
+	height: 100vh; 	
+	background-image: url(../Media/Fondos/Datos.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+.cajaDatos{
+	box-sizing: content-box;
+	padding: 23%;
+	text-align: center;
+	font-size: 25px;
+}
+
+

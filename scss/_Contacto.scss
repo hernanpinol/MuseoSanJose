@@ -1,0 +1,75 @@
+.fondoContacto{
+	height: 100vh; 	
+	background-image: url(../Media/Fondos/DSCN8155.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 25px;
+	margin-top: 3px;
+	overflow: hidden;
+}
+.gridContacto{
+	display: grid;
+	height: 100vh;
+	grid-template-areas: "formulario datos" "formulario mapa";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	align-items: center;
+	justify-items: center;
+
+	.formulario{
+		grid-area: formulario;
+		background-color: rgba(225, 225, 225, 0.7);
+		padding: 20px;
+		font-size: 20px;
+		width: 30rem;
+		height: 78%;
+		margin-top: 2rem;
+	}
+	.datosContacto{
+		grid-area: datos;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(225, 225, 225, 0.7);
+		padding: 30px 40px;
+		margin-top: 100px;
+		display: flex;
+		height: auto;
+		width: auto;
+		line-height: 1.7;
+
+		p{
+			font-size:1.5rem;
+		}
+	}
+}
+.mapa{
+	grid-area: mapa;
+}
+
+
+.checkbox{
+	width: 20px;
+}
+
+textarea{
+	width: 100%;
+	height: 60%;
+	backgroud-color: white;
+}
+
+input{
+	background-color: #D4B08D;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	width: 100%;
+}
+.backgroudBotones{
+	background-color: #B38F58;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: white;
+	width: 49%;
+}
+

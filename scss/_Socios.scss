@@ -1,0 +1,124 @@
+.fondoSocios{
+	height: 100vh; 	
+	background-image: url(../Media/Fondos/DSCN8184.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 3px;
+	padding: 35px;
+	overflow: hidden;
+}
+#socios{
+	h2{
+		font-size: 1.8rem;
+	}
+	h3{
+		font-size: 1.8rem;
+	}
+	p{
+		font-size: 1.4rem;
+	}
+}
+
+#asociacion{
+	.gridAsociacion{
+		display: grid;
+		height: 100vh;
+		grid-template-areas: 
+		"asociacion comision" 
+		"asociacion redes";
+		grid-template-columns: 50% 40%;
+		grid-template-rows: 60% 40%;
+		column-gap: 10%;
+		justify-items: center;
+	}
+
+	.gridAsociacion .asociacion{
+		grid-area: asociacion;
+		background-color: rgba(225, 225, 225, 0.7);
+		padding: 20px;
+		margin-top: 100px;
+		height: 500px;
+		width: auto;
+	}
+
+	.gridAsociacion .comision{
+		grid-area: comision;
+		background-color: rgba(225, 225, 225, 0.7);
+		padding: 30px;
+		margin-top: 100px;
+		height: auto;
+		width: auto;
+	}
+
+	.gridAsociacion .redes{
+		grid-area: redes;
+		width: 60%;
+	}
+	.redes__box{
+		width: 80%;
+		height:4rem;
+		background-color: $secundario;
+		border-radius: 8px;
+	}
+}
+
+#eventos{
+	.tituloEventos{
+		margin-top: 2rem;
+		background-color: rgba(225, 225, 225, 0.9);
+	}
+	.gridEventos{
+		display: grid;
+		grid-template-areas: 
+		"noche chocolate"; 
+		grid-template-columns: 49% 49%;
+		column-gap: 2%;
+	}
+
+	.noche{
+		grid-area: noche;
+		background-color: rgba(225, 225, 225, 0.7);
+		padding: 25px;
+		margin-top: 1rem;
+	}
+
+	.chocolate{
+		grid-area: chocolate;
+		background-color: rgba(225, 225, 225, 0.7);
+		padding: 25px;
+		margin-top: 1rem;
+	}
+}
+
+#entidades{
+	.escudos{
+		width: 100px;
+	}
+
+	.bandera{
+		width: 110px;
+	}
+
+	.bandera2{
+		width: 110px;
+	}
+
+	.entidades{
+		background-color: rgba(225, 225, 225, 0.7);
+		width: auto;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		margin: 6rem 0.6rem;
+	}
+	.tituloEventos{
+		margin-top: 6rem;
+		background-color: rgba(225, 225, 225, 0.9);
+	}
+}
+
+

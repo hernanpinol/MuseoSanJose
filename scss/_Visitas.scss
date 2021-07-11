@@ -1,0 +1,136 @@
+.fondoVisitas{
+	height: 100vh; 	
+	background-image: url(../Media/Fondos/DSCN8139.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 25px;
+	margin-top: 3px;
+	overflow: hidden;
+}
+
+.fBlanco{
+	background-color: rgba(225, 225, 225, 0.7);
+	padding: 20px;
+	height: auto;
+}
+
+#horariosTarifas{
+	.Horarios{
+		width: auto;
+		margin: 4%;
+	}
+	.columnaHorarios1 {
+		background-color:#D4B08D;
+		border-radius: 8px;
+		width: 12rem;
+		font-family: $fuente;
+		font-weight: $fuente-semibold;
+		color: $texto2;
+		padding: 8px;
+		font-size: 1.2rem;
+	}
+
+	.columnaHorarios2 {
+		background-color: $terciario;
+		border-radius: 8px;
+		width: 22rem;
+		color: $texto2;
+		text-align: center;
+		height: 3rem;
+		font-size: 1.2rem;
+	}
+
+	.Tarifas{
+		width: auto;
+		margin: 4%;
+	}
+
+	.columnaTarifas1 {
+		background-color:#D4B08D;
+		border-radius: 8px;
+		width: 30rem;
+		font-family: $fuente;
+		font-weight: $fuente-semibold;
+		color: $texto2;
+		padding: 8px;
+		font-size: 1.2rem;
+	}
+
+	.columnaTarifas2 {
+		background-color:$terciario;
+		border-radius: 8px;
+		width: 12rem;
+		color: $texto2;
+		text-align: center;
+		font-size: 1.2rem;
+	}
+}
+
+#guiadas{
+	.VisitasG{
+		max-width: 500px;
+		padding: 30px;
+		margin: 10px;
+		p{
+			font-size: 1.5rem;
+		}
+	}
+
+	.infoVisitas{
+		min-width: 500px;
+		padding: 30px;
+		margin: 10px;
+	}
+
+	.columnaGuiadas1 {
+		background-color:#D4B08D;
+		border-radius: 8px;
+		width: 15rem;
+		font-family: $fuente;
+		font-weight: $fuente-semibold;
+		color: $texto2;
+		padding: 8px;
+		font-size: 1.2rem;
+	}
+
+	.columnaGuiadas2 {
+		background-color: $terciario;
+		border-radius: 8px;
+		width: 22rem;
+		color: $texto2;
+		text-align: center;
+		height: 3rem;
+		font-size: 1.2rem;
+	}
+	p{
+		font-size: 1.5rem;
+	}
+}
+
+#accesibilidad{
+	p{
+		font-size: 1.4rem;
+	}
+	.accesibilidad{
+		max-width: 600px;
+		margin: 60px;
+		padding: 30px;
+	}
+}
+
+#testimonios{
+	.tituloTestimonios{
+		margin-top: 8rem;
+		background-color: rgba(225, 225, 225, 0.9);
+		text-align: center;
+		
+	}
+	.cajaTestimonios{
+		background-color: rgba(225, 225, 225, 0.9);
+		color: $primario;
+		font-family: $fuente;
+		font-weight: $fuente-bold;
+		text-align: center;
+	}
+}

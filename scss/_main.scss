@@ -1,0 +1,260 @@
+
+body{
+	font-family: $fuente;
+	font-weight: $fuente-light;
+	font-style: normal;
+	font-size: 19px;
+	text-align: justify;
+}
+.tituloRojo{
+	color: $primario;
+	font-family: $fuente;
+	font-weight: $fuente-bold;
+}
+
+.tituloAzul{
+	color: #52667c;
+	font-family: $fuente;
+	font-weight: $fuente-bold;
+	text-align: center;
+
+}
+.subtituloAzul{
+	color: #52667c;
+	font-family: $fuente;
+	font-weight:$fuente-regular;
+	text-align: center;
+}
+.subtituloRojo{
+	color: $primario;
+	font-family: $fuente;
+	font-weight: $fuente-regular;
+}
+
+#header{
+	background: rgb(184,148,96);
+	background: linear-gradient(180deg, rgba(184,148,96,1) 0%, rgba(217,186,157,1) 100%);
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	display: grid;
+	grid-template-areas: 
+	"botoneraSuperior"
+	"botoneraInferior";
+	grid-template-rows: 60% 40%;
+
+	.botoneraSuperior{
+		width: 90%;
+		margin: auto;
+		padding: 4px;
+		height: auto;
+		border-bottom: 1px solid #B38F58;
+	}
+
+	.menu{
+		color: $texto2;
+		font-weight: $fuente-light;
+		font-size: 1.6rem;
+		backgroud-color: white;
+		content: none;
+
+		img{
+			width: auto;
+			height: 38px;
+		}
+	}
+	.btn:focus {
+		box-shadow:none !important;
+	}
+	.btn:hover {
+		color: #52667c;
+	}
+	.dropdown-item:hover {
+		color: #52667c;
+		text-decoration: none;
+		background-color: #B38F58;
+	}
+	.menuStile{
+		background: rgb(184,148,96);
+		background: linear-gradient(180deg, rgba(184,148,96,1) 0%, rgba(217,186,157,1) 100%);
+		border: none;
+		a{
+			color: white;
+			font-size: 1.1rem;
+		}
+	}
+	.barraItems{
+		border-top: 1px solid #B38F58;
+	}
+
+	.tienda{
+		font-weight: $fuente-light;
+		font-size: 1.6rem;
+		background-color: $primario;
+		padding-right: 0.5em;
+		padding-left: 0.3em;
+		border-radius: 7px;
+		img{
+			width:25px;
+		}
+	}
+
+	.tienda:active{
+		transform: translateY(10px);
+	}
+
+	.tienda__titulo{
+		padding: 2px;
+	}
+
+	.entradas{
+		color: $texto2;
+		font-size: 1.6rem;
+		width: auto;
+		height: auto;
+	}
+	.entradas img{
+		height: 37px;
+	}
+	.entradas:active{
+		transform: translateY(10px);
+	}
+}
+
+botoneraInferior{
+	width: 80%;
+	max-width: 1280px;
+	height: auto;
+}
+
+.botoneraInferior ul{
+	list-style: none;
+}
+
+
+.botoneraInferior ul li a{
+	text-decoration: none;
+	font-family: $fuente;
+	font-weight: $fuente-semibold;
+	color: $texto2;
+	font-size: 1.6rem;
+}
+.botoneraInferior ul li a:hover {
+	color: #52667c;
+}
+.seccionActiva{
+	color: #52667c !important ;
+}
+
+.fondoBlanco{
+	background-color: rgba(225, 225, 225, 0.7);
+	height: auto;
+
+	h2{
+		text-align: center;
+		margin-bottom: 5px;
+		margin-bottom: 10px;
+		font-size: 28px;
+	}
+	img{
+		max-height: 530px;	
+	}
+	
+}
+
+.cajaImagen{
+	margin-top: 20px;
+	justify-content: space-evenly;
+	height: 30%;
+}
+.carousel-inner img {
+	margin: 0 auto;
+	width: 80% !important;
+}
+
+#footer{
+	background: rgb(184,148,96);
+	background: linear-gradient(0deg, rgba(184,148,96,1) 0%, rgba(217,186,157,1) 100%);
+	width: 100%;
+	margin-top: 3px;
+
+
+	.footer__caja{
+		width: 90%;
+		margin: auto;
+		padding: 4px;
+		height: 70px;
+		position: relative;
+		border-bottom: 1px solid $terciario;
+	}
+
+	.footer__logo{
+		display: block;
+		margin: auto;
+		position: absolute;
+		padding: 0% 47%;
+	}
+
+	.footer__grid{
+		display: grid;
+		height: 80%;
+		grid-template-areas: "enlaces redes ." "enlaces asociarse .";
+		grid-template-columns: 60% 20% 10%;
+		grid-template-rows: 40% 60%;
+		grid-column-gap: 10%;
+		padding: 0.5rem 0rem;
+
+		.footer__enlaces{
+			grid-area: enlaces;
+			display: inline-flex;
+			border-right: 1px solid $terciario;
+			justify-content: space-between;
+			padding: 0px 40px;
+		}
+		.footer__tituloEnlaces{
+			font-family: $fuente;
+			font-weight: $fuente-semibold;
+			color: $texto2;
+		}
+
+		ul{
+			list-style: none;
+			text-align: left;
+			padding: 0px;
+			margin-bottom: 0px;
+
+		}
+
+		ul li a{
+			text-decoration: none;
+			color: $texto2;
+			font-size: 18px;
+		}
+
+		.footer__redes{
+			grid-area: redes;
+			border-bottom: 1px solid $terciario;
+		}
+
+		.footer__asociarse{
+			grid-area: asociarse;
+			button{
+				background-color: $primario;
+				border-color: $primario;
+				a{
+					color:$texto2;
+				}
+				
+			}
+		}
+
+	}
+}
+
+.iconoContacto a img{
+	width: 50px;
+	position: fixed;
+	bottom: 10px;
+	right: 3px;
+}

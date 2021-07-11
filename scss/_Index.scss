@@ -1,0 +1,32 @@
+#Portada{
+	.fondoPortada{
+		height: 100vh; 	
+		background-image: url(../Media/Fondos/DSCN8100.JPG);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.cajaTituloPortada{
+		padding: 20em 0px 0px 1em;
+		width: 80%;
+	}
+	h1{
+		font-family: $fuente2;
+		font-weight: 700;
+		color: $texto2;
+		-webkit-text-stroke: 1px black;
+		font-size: 5rem;		
+		text-align: start;
+	}
+
+}
+
+.fondoIndex{
+	height: 100vh; 	
+	background-image: url(../Media/Fondos/fondoIndex.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 3px;
+	overflow: hidden;
+}
