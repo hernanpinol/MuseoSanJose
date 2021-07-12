@@ -31,30 +31,31 @@
 		grid-template-rows: 60% 40%;
 		column-gap: 10%;
 		justify-items: center;
-	}
+	
 
-	.gridAsociacion .asociacion{
+	.asociacion{
 		grid-area: asociacion;
 		background-color: rgba(225, 225, 225, 0.7);
-		padding: 20px;
+		padding: 1.5rem;
 		margin-top: 100px;
 		height: 500px;
 		width: auto;
 	}
 
-	.gridAsociacion .comision{
+	.comision{
 		grid-area: comision;
 		background-color: rgba(225, 225, 225, 0.7);
-		padding: 30px;
+		padding: 1.5rem;
 		margin-top: 100px;
 		height: auto;
 		width: auto;
 	}
 
-	.gridAsociacion .redes{
+	.redes{
 		grid-area: redes;
 		width: 60%;
 	}
+}
 	.redes__box{
 		width: 80%;
 		height:4rem;
@@ -152,7 +153,6 @@
 	.btn-amigos{
 		display: inline-block;
 		background-color: $primario;
-		border-color: $primario;
 		text-align: center;
 		vertical-align: middle;
 		color: $texto2;
