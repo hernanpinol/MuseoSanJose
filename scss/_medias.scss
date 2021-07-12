@@ -150,8 +150,8 @@
 			flex-basis: 0%;
 		}
 		.carousel-inner img {
-    	width: 93% !important;
-}
+			width: 93% !important;
+		}
 		/*Index*/
 		.cajaTituloPortada h1{
 			font-size: 3rem;        
@@ -315,16 +315,12 @@
 		.fondoContacto{
 			padding: 0px 5px;
 		}
-		.gridContacto{
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			height: 100vh;
-			align-items: center;
-			justify-items: center;
+		.contacto{
+			flex-direction: column;
+		}
 		
 		.formulario{
-			margin-top: 4rem;
+			margin-top: 7rem;
 			padding: 1.5rem;
 
 			h2{
@@ -371,28 +367,28 @@
 		}
 	}
 
-		/*footer*/
-		#footer{
-			.footer__tituloEnlaces{
-				font-size: 1rem;
-			}
-			.footer__grid{
-				grid-template-columns: 75% 5% 10%;
-			}
-			.boton{
-				width: auto;
-				font-size: 1rem;
-				padding: .2rem .9rem;
-			}
+	/*footer*/
+	#footer{
+		.footer__tituloEnlaces{
+			font-size: 1rem;
+		}
+		.footer__grid{
+			grid-template-columns: 75% 5% 10%;
+		}
+		.boton{
+			width: auto;
+			font-size: 1rem;
+			padding: .2rem .9rem;
+		}
 
-			.footer__enlaces{
-				padding: 0px 10px;
+		.footer__enlaces{
+			padding: 0px 10px;
 
-				ul li a{
-					font-size: 0.8rem;
-				}
+			ul li a{
+				font-size: 0.8rem;
 			}
 		}
+
 	}
 
 	@media all and (min-width:450px){
