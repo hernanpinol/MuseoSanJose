@@ -10,13 +10,221 @@
 	<title>Formá parte del Museo Histórico Regional de la Colonia San José</title>
 	<meta name="description" content="Aquí podrás encontrar la planilla de inscripción para asociarte al Museo Histórico Regional de la Colonia San José. Los socios cuentan con beneficios exclusivos para el ingreso a las instalaciones, así como descuentos en eventos y la tienda del Museo. Hacete amigo!">
 	<meta name="keywords" content=" Museo, Colonia San José, asociarse">
-
 </head>
 <body>
-	<div class="fondoDatos">
-		<div class="cajaDatos">
-			<h1 class="tituloRojo">	PROXIMAMENTE!</h1>
+	<header id="header" class="d-flex flex-column">
+		<div class="d-flex flex-row justify-content-around align-items-center botoneraSuperior">
+			<div class=" d-flex-row align-items-center menu">
+				<div class="dropdown">
+					<button class=" d-flex flex-row menu btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<div class="d-flex flex-row align-items-center"><img src="Media/menu.png" alt="Menu"></div>
+						<div >Menu</div>
+					</button>
+					<div class="dropdown-menu menuStile" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item " href="Index.html">Inicio</a>
+						<a class="dropdown-item barraItems" href="Nosotros.html">Nosotros</a>
+						<a class="dropdown-item barraItems" href="Socios.html">Socios</a>
+						<a class="dropdown-item barraItems" href="Visitas.html">Visitas</a>
+						<a class="dropdown-item barraItems" href="Contacto.html">Contacto</a>
+						<a class="dropdown-item barraItems" href="Tienda.html">Tienda</a>
+						<a class="dropdown-item barraItems " href="Visitas.html">Entradas</a>
+					</div>
+				</div>
+			</div>
+			<div id="logo">
+				<a href="Index.html" > <img src="Media/Escudos/EscudoMuseo.png" alt="Logo Museo" class="img-fluid" style="max-height: 60px; min-height: 50px;"></a>
+			</div>
+			<div class="d-flex flex-row-reverse justify-content-between tienda">
+				<div class="tienda__titulo">
+					<a href="Tienda.html" style="text-decoration: none ; color: white; padding: 2px">Tienda</a>
+				</div>
+				<div>
+					<img src="Media/tienda.png" alt="tienda">
+				</div>
+			</div>
+			<div class=" d-flex flex-row justify-content-between align-items-center entradas">
+				<div class="d-flex flex-row align-items-center mr-1"><img src="Media/ticket.png" alt="entrada"></div>
+				<div><a href="Visitas.html" style="text-decoration: none; color: white">Entradas<a/></div>
+				</div>
+				<div class="buscar buscador">
+					<form class="form-inline buscador">
+						<input class="form-control mr-sm-2 buscador" type="search" placeholder="Buscar" aria-label="Search">
+					</form>
+				</div>
+			</div>
+			<div id="botoneraInferior" class=" d-flex flex-row justify-content-around botoneraInferior">
+				<ul class=" d-flex flex-row justify-content-center p-0 m-0 w-100">
+					<li class="mr-5"><a href="Index.html">Inicio</a></li>
+					<li class="mr-5"><a href="Nosotros.html">Nosotros</a></li>
+					<li class="mr-5"><a href="Socios.html">Socios</a></li>
+					<li class="mr-5"><a href="Visitas.html">Visitas</a></li>
+					<li ><a href="Contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!--Contenido Principal-->
+	<div class="fondoDatos d-flex flex-row align-items-center justify-content-center">
+		<div class="d-flex flex-column align-items-center formularioAmigo">
+			<div class="tituloRojo mb-3">
+				<h2>Solicitud de Ingreso</h2>
+			</div>
+			<form class="needs-validation" novalidate>
+				<div class="form-row">
+					<div class="col-md-6 mb-3">
+						<label for="nombre">Apellido de ascendencia</label>
+						<input type="text" class="form-control" id="validationTooltip01" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="nombre">Origen del apellido</label>
+						<input type="text" class="form-control" id="validationTooltip02" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control" id="validationTooltip03" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="apellido">Apellido</label>
+						<input type="text" class="form-control" id="validationTooltip04" value="" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6 mb-3">
+						<label for="identificacion">DNI</label>
+						<input type="text" class="form-control" id="validationTooltip05" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="nacimiento">Fecha de nacimiento<small></small></label>
+						<input type="date" id="nacimiento"  name="nacimiento"  class="form-control" value="" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6 mb-3">
+						<label for="ciudad">Ciudad</label>
+						<input type="text" class="form-control" id="validationTooltip06" required>
+					</div>
+					<div class="col-md-3 mb-3">
+						<label for="validationTooltip05">Provincia</label>
+						<select class="custom-select desplegableAmigos" id="validationTooltip07" required>
+							<option selected disabled value=""></option>
+							<option value="Buenos Aires">Buenos Aires</option>
+							<option value="Capital Federal">Capital Federal</option>
+							<option value="Catamarca">Catamarca</option>
+							<option value="Chaco">Chaco</option>
+							<option value="Chubut">Chubut</option>
+							<option value="Córdoba">Córdoba</option>
+							<option value="Corrientes">Corrientes</option>
+							<option value="Entre Ríos">Entre Ríos</option>
+							<option value="Formosa">Formosa</option>
+							<option value="Jujuy">Jujuy</option>
+							<option value="La Pampa">La Pampa</option>
+							<option value="La Rioja">La Rioja</option>
+							<option value="Mendoza">Mendoza</option>
+							<option value="Misiones">Misiones</option>
+							<option value="Neuquén">Neuquén</option>
+							<option value="Río Negro">Río Negro</option>
+							<option value="Salta">Salta</option>
+							<option value="San Juan">San Juan</option>
+							<option value="San Luis">San Luis</option>
+							<option value="Santa Cruz">Santa Cruz</option>
+							<option value="Santa Fe">Santa Fe</option>
+							<option value="Santiago del Estero">Santiago del Estero</option>
+							<option value="Tierra del Fuego">Tierra del Fuego</option>
+							<option value="Tucumán">Tucumán</option>
+						</select>
+					</div>
+					<div class="col-md-3 mb-3">
+						<label for="cp">Código postal</label>
+						<input type="text" class="form-control" id="validationTooltip08" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6 mb-3">
+						<label for="telefono">Teléfono</label>
+						<input type="text" class="form-control" id="validationTooltip09" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="mail">Mail</label>
+						<input type="Email" class="form-control" id="validationTooltip10" value="" required>
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="frecPago">Frecuencia de pago</label>
+						<select class="custom-select desplegableAmigos" id="validationTooltip11" required>
+							<option value="Anual">Anual</option>
+							<option value="Mensual">Mensual</option>
+						</select>
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="modoPago">Forma de pago</label>
+						<select class="custom-select desplegableAmigos" id="validationTooltip12" required>
+							<option value="Efectivo">Efectivo</option>
+							<option value="Transferencia">Transferencia</option>
+						</select>
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="pagoExterior">Pago desde el exterior</label>
+						<select class="custom-select desplegableAmigos" id="validationTooltip13" required>
+							<option value="No">No</option>
+							<option value="Si">Si</option>
+						</select>
+					</div>
+				</div>
+				<button class="btn-amigos" type="submit">Enviar</button>
+			</form>
 		</div>
 	</div>
+	<!--Footer-->
+	<div>
+		<footer id="footer">
+			<div class=" d-flex flex-row justify-content-center footer__caja">
+				<div class="footer__logo"><a href="Index.html" > <img src="Media/Escudos/EscudoMuseo.png" alt="Logo Museo" height="60px"></a></div>
+			</div>
+			<div class="footer__grid">
+				<div id="enlaces" class="footer__enlaces">
+					<ul>
+						<li><h4 class="footer__tituloEnlaces">Inicio</h4></li>
+						<li><a href="Index.html#colonia">La Colonia</a></li>
+						<li><a href="Index.html#fundacion">Fundación</a></li>
+						<li><a href="Index.html#museo">El Museo</a></li>
+					</ul>
+					<ul>
+						<li><h4 class="footer__tituloEnlaces">Nosotros</h4></li>
+						<li><a href="Nosotros.html#muestras">Muestras</a></li>
+						<li><a href="Nosotros.html#conservacion">Conservación y restauración</a></li>
+						<li><a href="Nosotros.html#reserva">Reserva Técnica</a></li>
+					</ul>
+					<ul>
+						<li><h4 class="footer__tituloEnlaces">Socios</h4></li>
+						<li><a href="Socios.html#asociacion">La asociación</a></li>
+						<li><a href="Socios.html#eventos">Eventos</a></li>
+						<li><a href="Socios.html#entidades">Entidades asociadas</a></li>
+					</ul>
+					<ul>
+						<li><h4 class="footer__tituloEnlaces">Visitas</h4></li>
+						<li><a href="Visitas.html#horariosTarifas">Horarios y tarifas</a></li>
+						<li><a href="Visitas.html#guiadas">Visitas guiadas</a></li>
+						<li><a href="Visitas.html#accesibilidad">Museo accesible</a></li>
+						<li><a href="Visitas.html#testimonios">Testimonios</a></li>
+					</ul>
+				</div>
+				<div class="footer__redes d-flex justify-content-around">
+					<div class="d-flex flex-row  align-items-center">	
+						<a href="https://www.facebook.com/museohistorico.sanjose" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"><path d="M12.001,2.002c-5.522,0-9.999,4.477-9.999,9.999c0,4.99,3.656,9.126,8.437,9.879v-6.988h-2.54v-2.891h2.54V9.798	c0-2.508,1.493-3.891,3.776-3.891c1.094,0,2.24,0.195,2.24,0.195v2.459h-1.264c-1.24,0-1.628,0.772-1.628,1.563v1.875h2.771	l-0.443,2.891h-2.328v6.988C18.344,21.129,22,16.992,22,12.001C22,6.479,17.523,2.002,12.001,2.002z"/></svg></a>
+					</div>
+					<div class="d-flex flex-row  align-items-center">	
+						<a href="https://instagram.com/museohist.sanjose?utm_medium" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"><path d="M20.947,8.305c-0.011-0.757-0.151-1.508-0.419-2.216c-0.469-1.209-1.424-2.165-2.633-2.633 c-0.699-0.263-1.438-0.404-2.186-0.42C14.747,2.993,14.442,2.981,12,2.981s-2.755,0-3.71,0.055 c-0.747,0.016-1.486,0.157-2.185,0.42C4.896,3.924,3.94,4.88,3.472,6.089C3.209,6.788,3.067,7.527,3.053,8.274 c-0.043,0.963-0.056,1.268-0.056,3.71s0,2.754,0.056,3.71c0.015,0.748,0.156,1.486,0.419,2.187 c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45c0.963,0.043,1.268,0.056,3.71,0.056s2.755,0,3.71-0.056 c0.747-0.015,1.486-0.156,2.186-0.419c1.209-0.469,2.164-1.425,2.633-2.633c0.263-0.7,0.404-1.438,0.419-2.187 c0.043-0.962,0.056-1.267,0.056-3.71C21.003,9.572,21.003,9.262,20.947,8.305z M11.994,16.602c-2.554,0-4.623-2.069-4.623-4.623 s2.069-4.623,4.623-4.623c2.552,0,4.623,2.069,4.623,4.623S14.546,16.602,11.994,16.602z M16.801,8.263 c-0.597,0-1.078-0.482-1.078-1.078s0.481-1.078,1.078-1.078c0.595,0,1.077,0.482,1.077,1.078S17.396,8.263,16.801,8.263z"/><circle cx="11.994" cy="11.979" r="3.003"/></svg></a>
+					</div>
+				</div>
+				<div class="footer__asociarse d-flex justify-content-center align-items-center">
+					<button type="button" href="Asociarse.html" class="btn btn-lg boton"><a href="Asociarse.html">Hazte amigo!</a></button>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="iconoContacto">
+		<a href="Contacto.html"> <img src="Media/letra.png" alt=""></a>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
