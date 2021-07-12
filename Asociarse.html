@@ -58,74 +58,120 @@
 					<li class="mr-5"><a href="Nosotros.html">Nosotros</a></li>
 					<li class="mr-5"><a href="Socios.html">Socios</a></li>
 					<li class="mr-5"><a href="Visitas.html">Visitas</a></li>
-					<li ><a class="seccionActiva" href="Contacto.html">Contacto</a></li>
+					<li ><a href="Contacto.html">Contacto</a></li>
 				</ul>
 			</div>
 		</div>
 	</header>
 	<!--Contenido Principal-->
-	<div class="fondoDatos">
+	<div class="fondoDatos d-flex flex-row align-items-center justify-content-center">
 		<div class="d-flex flex-column align-items-center formularioAmigo">
-<div>
-	<h2>Solicitud de Ingreso</h2>
-</div>
-<form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="nombre">Nombre</label>
-      <input type="text" class="form-control" id="validationTooltip01" value="" required>
-      <div class="valid-tooltip">
-      </div>
-    </div>
-    <div class="col-md-6 mb-3">
-      <label for="apellido">Apellido</label>
-      <input type="text" class="form-control" id="validationTooltip02" value="" required>
-      <div class="valid-tooltip">
-      </div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="identificacion">DNI</label>
-      <input type="text" class="form-control" id="validationTooltip01" value="" required>
-      <div class="valid-tooltip">
-      </div>
-    </div>
-    <div class="col-md-6 mb-3">
-      <label for="nacimiento">Fecha de nacimiento<small></small></label>
-       <input type="date" id="nacimiento"  name="nacimiento"  class="sm-form-control" value="" required>
-      <div class="valid-tooltip">
-      </div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="ciudad">Ciudad</label>
-      <input type="text" class="form-control" id="validationTooltip03" required>
-      <div class="invalid-tooltip">
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationTooltip05">Provincia</label>
-      <select class="custom-select" id="validationTooltip04" required>
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
-      <div class="invalid-tooltip">
-        Please select a valid state.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationTooltip06">Zip</label>
-      <input type="text" class="form-control" id="validationTooltip05" required>
-      <div class="invalid-tooltip">
-        Please provide a valid zip.
-      </div>
-    </div>
-  </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
-</form>
-	</div>
+			<div class="tituloRojo mb-3">
+				<h2>Solicitud de Ingreso</h2>
+			</div>
+			<form class="needs-validation" novalidate>
+				<div class="form-row">
+					<div class="col-md-6 mb-3">
+						<label for="nombre">Apellido de ascendencia</label>
+						<input type="text" class="form-control" id="validationTooltip01" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="nombre">Origen del apellido</label>
+						<input type="text" class="form-control" id="validationTooltip02" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control" id="validationTooltip03" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="apellido">Apellido</label>
+						<input type="text" class="form-control" id="validationTooltip04" value="" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6 mb-3">
+						<label for="identificacion">DNI</label>
+						<input type="text" class="form-control" id="validationTooltip05" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="nacimiento">Fecha de nacimiento<small></small></label>
+						<input type="date" id="nacimiento"  name="nacimiento"  class="form-control" value="" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6 mb-3">
+						<label for="ciudad">Ciudad</label>
+						<input type="text" class="form-control" id="validationTooltip06" required>
+					</div>
+					<div class="col-md-3 mb-3">
+						<label for="validationTooltip05">Provincia</label>
+						<select class="custom-select desplegableAmigos" id="validationTooltip07" required>
+							<option selected disabled value=""></option>
+							<option value="Buenos Aires">Buenos Aires</option>
+							<option value="Capital Federal">Capital Federal</option>
+							<option value="Catamarca">Catamarca</option>
+							<option value="Chaco">Chaco</option>
+							<option value="Chubut">Chubut</option>
+							<option value="Córdoba">Córdoba</option>
+							<option value="Corrientes">Corrientes</option>
+							<option value="Entre Ríos">Entre Ríos</option>
+							<option value="Formosa">Formosa</option>
+							<option value="Jujuy">Jujuy</option>
+							<option value="La Pampa">La Pampa</option>
+							<option value="La Rioja">La Rioja</option>
+							<option value="Mendoza">Mendoza</option>
+							<option value="Misiones">Misiones</option>
+							<option value="Neuquén">Neuquén</option>
+							<option value="Río Negro">Río Negro</option>
+							<option value="Salta">Salta</option>
+							<option value="San Juan">San Juan</option>
+							<option value="San Luis">San Luis</option>
+							<option value="Santa Cruz">Santa Cruz</option>
+							<option value="Santa Fe">Santa Fe</option>
+							<option value="Santiago del Estero">Santiago del Estero</option>
+							<option value="Tierra del Fuego">Tierra del Fuego</option>
+							<option value="Tucumán">Tucumán</option>
+						</select>
+					</div>
+					<div class="col-md-3 mb-3">
+						<label for="cp">Código postal</label>
+						<input type="text" class="form-control" id="validationTooltip08" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6 mb-3">
+						<label for="telefono">Teléfono</label>
+						<input type="text" class="form-control" id="validationTooltip09" value="" required>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="mail">Mail</label>
+						<input type="Email" class="form-control" id="validationTooltip10" value="" required>
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="frecPago">Frecuencia de pago</label>
+						<select class="custom-select desplegableAmigos" id="validationTooltip11" required>
+							<option value="Anual">Anual</option>
+							<option value="Mensual">Mensual</option>
+						</select>
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="modoPago">Forma de pago</label>
+						<select class="custom-select desplegableAmigos" id="validationTooltip12" required>
+							<option value="Efectivo">Efectivo</option>
+							<option value="Transferencia">Transferencia</option>
+						</select>
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="pagoExterior">Pago desde el exterior</label>
+						<select class="custom-select desplegableAmigos" id="validationTooltip13" required>
+							<option value="No">No</option>
+							<option value="Si">Si</option>
+						</select>
+					</div>
+				</div>
+				<button class="btn-amigos" type="submit">Enviar</button>
+			</form>
+		</div>
 	</div>
 	<!--Footer-->
 	<div>

@@ -128,6 +128,46 @@
 	width: 50%;
 	height: auto;
 	margin-top: 10%;
+
+	input{
+		background-color: $fondoMarron;
+		font-family:$fuente;
+		font-weight: $fuente-light;
+		width: 100%;
+		color: white;
+	}
+	select{
+		background-color: $fondoMarron;
+		width: 100%;
+		color: white;
+	}
+	label{
+		font-family: $fuente;
+		font-weight: $fuente-regular;
+	}
+	option{
+		font-family:$fuente;
+		font-weight: $fuente-light;
+	}
+	.btn-amigos{
+		display: inline-block;
+		background-color: $primario;
+		border-color: $primario;
+		text-align: center;
+		vertical-align: middle;
+		color: $texto2;
+		border: 1px solid transparent;
+		border-radius: 4px;
+    	font-weight: $fuente-regular;
+    	padding: 3px 10px;
+	}
+	.desplegableAmigos{
+		font-family:$fuente;
+		font-weight: $fuente-light;
+	}
+	.btn-amigos:focus {outline:0;}
+
 }
+
 
 
