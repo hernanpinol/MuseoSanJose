@@ -199,7 +199,7 @@ botoneraInferior{
 		display: grid;
 		height: 80%;
 		grid-template-areas: "enlaces redes ." "enlaces asociarse .";
-		grid-template-columns: 60% 20% 10%;
+		grid-template-columns: 65% 15% 10% !important;
 		grid-template-rows: 40% 60%;
 		grid-column-gap: 10%;
 		padding: 0.5rem 0rem;
@@ -210,11 +210,14 @@ botoneraInferior{
 			border-right: 1px solid $terciario;
 			justify-content: space-between;
 			padding: 0px 40px;
-		}
+			margin-left: 3rem;
+
+		
 		.footer__tituloEnlaces{
 			font-family: $fuente;
 			font-weight: $fuente-semibold;
 			color: $texto2;
+			font-size: 1.4rem;
 		}
 
 		ul{
@@ -230,6 +233,7 @@ botoneraInferior{
 			color: $texto2;
 			font-size: 18px;
 		}
+	}
 
 		.footer__redes{
 			grid-area: redes;
@@ -241,8 +245,11 @@ botoneraInferior{
 			button{
 				background-color: $primario;
 				border-color: $primario;
+				width: auto;
+				padding: .6rem .9rem;
 				a{
 					color:$texto2;
+					font-size: 1.2rem;
 				}
 				
 			}

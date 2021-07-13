@@ -125,7 +125,7 @@
 .formularioAmigo{
 	background-color: rgba(225, 225, 225, 0.7);
 	padding: 20px;
-	font-size: 20px;
+	font-size: 1.4rem;
 	width: 50%;
 	height: auto;
 	margin-top: 10%;
@@ -136,6 +136,9 @@
 		font-weight: $fuente-light;
 		width: 100%;
 		color: white;
+	}
+	.form-control:focus {
+		outline:0;
 	}
 	select{
 		background-color: $fondoMarron;

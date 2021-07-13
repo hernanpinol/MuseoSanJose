@@ -36,7 +36,6 @@
 	}
 }
 .mapa{
-	grid-area: mapa;
 	iframe{
 		width: 100%;
 		height: 30rem;
@@ -55,9 +54,8 @@
 }
 
 textarea{
-	width: 97%;
-	min-height: 12rem;
-	backgroud-color: white;
+	width: 100%;
+	min-height: 20rem;
 }
 
 input{
