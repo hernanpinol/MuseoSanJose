@@ -31,31 +31,31 @@
 		grid-template-rows: 60% 40%;
 		column-gap: 10%;
 		justify-items: center;
-	
+		
 
-	.asociacion{
-		grid-area: asociacion;
-		background-color: rgba(225, 225, 225, 0.7);
-		padding: 1.5rem;
-		margin-top: 100px;
-		height: 500px;
-		width: auto;
-	}
+		.asociacion{
+			grid-area: asociacion;
+			background-color: rgba(225, 225, 225, 0.7);
+			padding: 1.5rem;
+			margin-top: 100px;
+			height: 500px;
+			width: auto;
+		}
 
-	.comision{
-		grid-area: comision;
-		background-color: rgba(225, 225, 225, 0.7);
-		padding: 1.5rem;
-		margin-top: 100px;
-		height: auto;
-		width: auto;
-	}
+		.comision{
+			grid-area: comision;
+			background-color: rgba(225, 225, 225, 0.7);
+			padding: 1.5rem;
+			margin-top: 100px;
+			height: auto;
+			width: auto;
+		}
 
-	.redes{
-		grid-area: redes;
-		width: 60%;
+		.redes{
+			grid-area: redes;
+			width: 60%;
+		}
 	}
-}
 	.redes__box{
 		width: 80%;
 		height:4rem;
@@ -89,6 +89,10 @@
 		background-color: rgba(225, 225, 225, 0.7);
 		padding: 25px;
 		margin-top: 1rem;
+	}
+	.carousel-inner img {
+		margin: 0 auto;
+		width: 88% !important;
 	}
 }
 
@@ -161,8 +165,8 @@
 		color: $texto2;
 		border: 1px solid transparent;
 		border-radius: 4px;
-    	font-weight: $fuente-regular;
-    	padding: 3px 10px;
+		font-weight: $fuente-regular;
+		padding: 3px 10px;
 	}
 	.desplegableAmigos{
 		font-family:$fuente;
