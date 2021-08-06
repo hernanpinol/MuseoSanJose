@@ -1,520 +1,553 @@
-	@media all and (max-width: 992px){
-		.fondoBlanco{
-			display: flex;
-			flex-direction: column !important;
+@media all and (max-width: 992px){
+	.fondoBlanco{
+		display: flex;
+		flex-direction: column !important;
+	}
+	.mediaMobile{
+		max-width:100%;
+		flex-basis: 0%;
+	}
+
+	/*Visitas*/
+	.fondoVisitas{
+		display: flex;
+		flex-direction: column !important;
+		padding: 1.5rem;
+	}
+	.accesibilidad{
+		margin: 20px;
+	}
+	/*Contacto*/
+	.contacto{
+		flex-direction: column;
+	}
+	.formulario{
+		margin-top: 12rem;
+		padding: 1.5rem;
+
+		h2{
+			font-size: 1.8rem;
 		}
-		.mediaMobile{
-			max-width:100%;
-			flex-basis: 0%;
+		label{
+			font-size: 1.2rem;
+			margin-bottom: 0rem;
 		}
-
-		/*Visitas*/
-		.fondoVisitas{
-			display: flex;
-			flex-direction: column !important;
-			padding: 1.5rem;
+		input{
+			font-size: 1.2rem;
 		}
-		.accesibilidad{
-			margin: 20px;
-		}
-		/*Contacto*/
-		
-		.contacto{
-			flex-direction: column;
-		}
-		.formulario{
-			margin-top: 12rem;
-			padding: 1.5rem;
-
-			h2{
-				font-size: 1.8rem;
-			}
-			label{
-				font-size: 1.2rem;
-				margin-bottom: 0rem;
-			}
-			input{
-				font-size: 1.2rem;
-			}
-			select{
-				font-size: 1.2rem;
-			}
-		}
-		.datosContacto{
-			margin-top: 0px;
-			padding: 1rem;
-			min-width: 25rem;
-			max-height: 20rem;
-
-			h2{
-				font-size:1.8rem
-			}
-
-			p{
-				font-size:1.2rem;
-			}
-		}
-
-		.col-7{
-			overflow: hidden;
-			position: relative;
-			max-width: 100%;
-
-			iframe{
-				left:0;
-				top:0;
-				height: 27rem;
-				width: 100%;
-			}
-			.fBlanco{
-				height: 100%;
-				width: 100%;
-				margin-top: 3rem;
-				padding: 1rem 2rem;
-				h2{
-					font-size:1.7rem;
-				}
-			}
-		}
-
-
-
-		#footer{
-			.footer__enlaces{
-				font-size: 0.8rem !important;
-				padding: 0px 20px;
-			}
-			.footer__tituloEnlaces{
-				font-size: 1.2rem;
-			}
-			.footer__grid{
-				grid-template-columns: 75% 5% 10%;
-			}
-
-			.gridEventos{
-				margin: 8rem 0rem;
-				height: auto;
-			}
+		select{
+			font-size: 1.2rem;
 		}
 	}
-	@media all and (max-width: 576px){
-		#header{
-			.botoneraInferior ul li a{
-				font-size: 1.3rem;
-			}
+	.datosContacto{
+		margin-top: 0px;
+		padding: 1rem;
+		min-width: 25rem;
+		max-height: 20rem;
 
-			#logo{
-				position: relative;
-				right: 29%;
-
-				img{
-					min-width: 61.6px;
-				}
-			}
-			.tienda{
-				font-size: 1.2rem;
-				padding-right: 0.1em;
-				padding-left: 0.1em;
-				margin-left: 3rem;
-
-				img{
-					width:16px;
-				}
-			}
-			.entradas{          
-				font-size: 1.2rem;
-
-				.entradas img{
-					height: 24px;
-				}
-			}
-			.buscar{
-				position: fixed;
-				left: 106px;
-				top: 14px;
-			}
-		}
-		/*Principal*/
-
-		.fondoBlanco{
-			display: flex;
-			flex-direction: column !important;
-			margin: 0rem 0.8rem;
-
-
-			h2{
-				font-size: 1.2rem !important;
-			}
-
-			p{
-				font-size:0.9rem;
-			}
-			img {
-				max-height: 300px;
-				width: auto;
-			}
-		}
-		.mediaMobile{
-			max-width:100%;
-			flex-basis: 0%;
-		}
-		.carousel-inner img {
-			width: 93% !important;
-		}
-		/*Index*/
-		.cajaTituloPortada h1{
-			font-size: 3rem;        
-		}
-		/*Socios*/
-		#socios{
-			h2{
-				font-size: 1.3rem;
-			}
-			h3{
-				font-size: 1.3rem;
-			}
-
-			p{
-				font-size: 1rem;
-				margin-bottom: 0;
-			}
-
-
-			.fondoSocios{
-				padding: 0px 6px;
-			}
-			.gridAsociacion{
-				display: flex;
-				flex-direction: column !important;
-				justify-content: space-around;
-				align-items: center;
-				height: auto;
-			}
-			.comision{
-				margin-top: 0px;
-			}
-			.gridEventos{
-				display: flex;
-				flex-direction: column !important;
-				justify-content: space-around;
-				align-items: center;
-				padding: 0rem 0.4rem !important;
-				margin: 0rem 1.5rem;
-			}
-			.noche{
-				padding: 0.5rem;
-				margin-top: 10px;
-			}
-			.chocolate{
-				padding: 0.5rem;
-				margin-top: 10px;
-			}
-			#eventos img {
-				max-height: 200px;
-				width: 300px !important;
-			}
-			.tituloEventos {
-				margin-top: 1rem;
-			}
-			.boxEntidades{
-				display: flex;
-				flex-direction: column !important;
-			}
-			.entidades {
-				padding: 0.6rem 0.8rem;
-				margin: 1.6rem 1rem;
-				flex-direction: row;
-
-				p{
-					margin-bottom: 0px;
-				}
-				h3{
-					margin: 1rem;
-				}
-			}
-			.escudos{
-				width: 80px;
-			}
-
-			.bandera{
-				width: 90px;
-			}
-
-			.bandera2{
-				width: 90px;
-			}
+		h2{
+			font-size:1.8rem
 		}
 
-		/*Visitas*/
-		.fondoVisitas{
-			display: flex;
-			flex-direction: column !important;
-			padding: 1.5rem;
+		p{
+			font-size:1.2rem;
 		}
-		.Horarios{
-			margin-top: 20%;;
+	}
 
-		}
+	.col-7{
+		overflow: hidden;
+		position: relative;
+		max-width: 100%;
 
-		.fBlanco {
-			padding: 1em;
+		iframe{
+			left:0;
+			top:0;
+			height: 27rem;
 			width: 100%;
 		}
-		#horariosTarifas{
-			h2{
-				font-size: 1.4rem;
-			}
-			.columnaHorarios1 {
-				font-size: 1.2rem;
-			}
-			.columnaHorarios2 {
-				font-size: 1.2rem;
-			}
-			.Tarifas {
-				margin-top: 1%;
-			}
-			.columnaTarifas1 {
-				font-size: 1.2rem;
-			}
-			.columnaTarifas2 {
-				font-size: 1.2rem;
-			}
-		}
-		#guiadas{
-			.VisitasG {
-				padding: 1rem;
-
-				h2{
-					font-size: 1.4rem;
-				}
-				p{
-					font-size: 1.2rem;
-				}
-			}
-			.infoVisitas {
-				padding: 0.5em;
-				min-width: 340px;
-
-
-				td {
-					font-size: 1.2rem;
-					width: auto;
-				}
-			}
-			.columnaGuiadas2 {
-				width: 10rem;
-				height: 2rem;
-			}
-		}
-		#accesibilidad{
-
-			h2{
-				font-size: 1.2rem;
-			}
-			p{
-				font-size: 1rem;
-				margin: 0.2px;
-			}
-
-			.video{
-				width:  300px;
-			}
-		}
-		/*Contacto*/
-		.fondoContacto{
-			padding: 0px 5px;
-		}
-		.contacto{
-			flex-direction: column;
-		}
-		
-		.formulario{
-			margin-top: 7rem;
-			padding: 1.5rem;
-
-			h2{
-				font-size: 1.4rem;
-			}
-			label{
-				font-size: 1rem;
-				margin-bottom: 0rem;
-			}
-			input{
-				font-size: 1rem;
-			}
-			select{
-				font-size: 0.8rem;
-			}
-		}
-		.datosContacto{
-			min-width: 20rem;
-			max-height: 15rem;
-
+		.fBlanco{
+			height: 100%;
+			width: 100%;
+			margin-top: 3rem;
+			padding: 1rem 2rem;
 			h2{
 				font-size:1.7rem;
 			}
-
-			p{
-				font-size:1.1rem;
-			}
-		}
-
-		.col-7{
-			overflow: hidden;
-			position: relative;
-			max-width: 100%;
-
-			iframe{
-				left:0;
-				top:0;
-				height: 19rem;
-				width: 100%;
-			}
-			.fBlanco{
-				height: 100%;
-				width: 100%;
-				margin-top: 3rem;
-				h2{
-					font-size:1.7rem;
-				}
-			}
 		}
 	}
-	/*Asociarse*/
-
-	/*footer*/
+	/*Socios*/
+	.formularioAmigo {
+		width: 90%;
+	}
 	#footer{
+		.footer__enlaces{
+			font-size: 0.8rem !important;
+			padding: 0px 20px;
+		}
 		.footer__tituloEnlaces{
-			font-size: 1rem;
+			font-size: 1.2rem;
 		}
 		.footer__grid{
 			grid-template-columns: 75% 5% 10%;
 		}
-		.boton{
+
+		.gridEventos{
+			margin: 8rem 0rem;
+			height: auto;
+		}
+	}
+}
+@media all and (max-width: 576px){
+	#header{
+		.botoneraInferior ul li a{
+			font-size: 1.3rem;
+		}
+
+		#logo{
+			position: relative;
+			right: 29%;
+
+			img{
+				min-width: 61.6px;
+			}
+		}
+		.tienda{
+			font-size: 1.2rem;
+			padding-right: 0.1em;
+			padding-left: 0.1em;
+			margin-left: 3rem;
+
+			img{
+				width:16px;
+			}
+		}
+		.entradas{          
+			font-size: 1.2rem;
+
+			.entradas img{
+				height: 24px;
+			}
+		}
+		.buscar{
+			position: fixed;
+			left: 106px;
+			top: 14px;
+		}
+	}
+	/*Principal*/
+
+	.fondoBlanco{
+		display: flex;
+		flex-direction: column !important;
+		margin: 0rem 0.8rem;
+
+
+		h2{
+			font-size: 1.2rem !important;
+		}
+
+		p{
+			font-size:0.9rem;
+		}
+		img {
+			max-height: 300px;
 			width: auto;
+		}
+	}
+	.mediaMobile{
+		max-width:100%;
+		flex-basis: 0%;
+	}
+	.carousel-inner img {
+		width: 93% !important;
+	}
+	/*Index*/
+	.cajaTituloPortada h1{
+		font-size: 3rem;        
+	}
+	/*Socios*/
+	#socios{
+		h2{
+			font-size: 1.3rem;
+		}
+		h3{
+			font-size: 1.3rem;
+		}
+
+		p{
 			font-size: 1rem;
-			padding: .2rem .9rem;
+			margin-bottom: 0;
 		}
 
-		.footer__enlaces{
-			padding: 0px 10px;
 
-			ul li a{
-				font-size: 0.8rem;
-			}
+		.fondoSocios{
+			padding: 0px 6px;
 		}
-
-	}
-
-	@media all and (min-width:450px){
-		#header{
-			.menu{
-				display: none !important;
-			}
+		.gridAsociacion{
+			display: flex;
+			flex-direction: column !important;
+			justify-content: space-around;
+			align-items: center;
+			height: auto;
 		}
-	}
-
-	@media all and (max-width: 450px){
-		/*Header*/
-		#header{
-			height: 70px;
-
-			.botoneraSuperior{
-				border-bottom: none;
-			}
-			.botoneraInferior{
-				visibility: hidden;
-			}
-
-			.menu{
-				font-size: 1.5rem;
-				margin-left: 1.5rem;
-
-				img{
-					width: auto;
-					height: 30px;
-				}
-			}
-			#logo{
-				position: relative;
-				left: 50%;
-			}
-			.tienda{
-				visibility: hidden;
-			}
-
-			.entradas{          
-				visibility: hidden;
-			}
-
-			.buscar{
-				display: none;
-			}
+		.comision{
+			margin-top: 0px;
 		}
-		/*Principal*/
-
-		.fondoBlanco{
-			h2{
-				font-size: 1rem !important;
-			}
+		.gridEventos{
+			display: flex;
+			flex-direction: column !important;
+			justify-content: space-around;
+			align-items: center;
+			padding: 0rem 0.4rem !important;
+			margin: 0rem 1.5rem;
+		}
+		.noche{
+			padding: 0.5rem;
+			margin-top: 10px;
+		}
+		.chocolate{
+			padding: 0.5rem;
+			margin-top: 10px;
+		}
+		#eventos img {
+			max-height: 200px;
+			width: 300px !important;
+		}
+		.tituloEventos {
+			margin-top: 1rem;
+		}
+		.boxEntidades{
+			display: flex;
+			flex-direction: column !important;
+		}
+		.entidades {
+			padding: 0.6rem 0.8rem;
+			margin: 1.6rem 1rem;
+			flex-direction: row;
 
 			p{
-				font-size:0.8rem;
-			}
-		}
-		.mediaMobile{
-			padding: 0rem;
-		}
-		/*Index*/
-		#Portada .cajaTituloPortada h1{
-			font-size: 2rem;        
-		}
-
-		/*Socios*/
-		#socios{
-			h2{
-				font-size: 1rem;
+				margin-bottom: 0px;
 			}
 			h3{
-				font-size: 1rem;
-			}
-
-			p{
-				font-size: 0.8rem;
-			}
-
-			#asociacion{
-				.fBlanco{
-					flex: 0% !important;
-					max-width: 85%;
-				}
-				.comision{
-					margin-top: 3rem;
-					margin-bottom: 3rem;
-				}
-			}
-
-			.gridEventos{
-				margin: 0rem 0.3rem;
-			}
-			.entidades {
-				padding: 0.2rem 0.4rem;
-				margin: 1rem 0.3rem;
-				flex-direction: row;
-			}
-
-			.escudos{
-				width: 70px;
-			}
-
-			.bandera{
-				width: 80px;
-			}
-
-			.bandera2{
-				width: 80px;
+				margin: 1rem;
 			}
 		}
+		.escudos{
+			width: 80px;
+		}
+
+		.bandera{
+			width: 90px;
+		}
+
+		.bandera2{
+			width: 90px;
+		}
+	}
+
+	/*Visitas*/
+	.fondoVisitas{
+		display: flex;
+		flex-direction: column !important;
+		padding: 1.5rem;
+	}
+	.Horarios{
+		margin-top: 20%;;
+
+	}
+
+	.fBlanco {
+		padding: 1em;
+		width: 100%;
+	}
+	#horariosTarifas{
+		h2{
+			font-size: 1.4rem;
+		}
+		.columnaHorarios1 {
+			font-size: 1.2rem;
+		}
+		.columnaHorarios2 {
+			font-size: 1.2rem;
+		}
+		.Tarifas {
+			margin-top: 1%;
+		}
+		.columnaTarifas1 {
+			font-size: 1.2rem;
+		}
+		.columnaTarifas2 {
+			font-size: 1.2rem;
+		}
+	}
+	#guiadas{
+		.VisitasG {
+			padding: 1rem;
+
+			h2{
+				font-size: 1.4rem;
+			}
+			p{
+				font-size: 1.2rem;
+			}
+		}
+		.infoVisitas {
+			padding: 0.5em;
+			min-width: 340px;
+
+
+			td {
+				font-size: 1.2rem;
+				width: auto;
+			}
+		}
+		.columnaGuiadas2 {
+			width: 10rem;
+			height: 2rem;
+		}
+	}
+	#accesibilidad{
+
+		h2{
+			font-size: 1.2rem;
+		}
+		p{
+			font-size: 1rem;
+			margin: 0.2px;
+		}
+
+		.video{
+			width:  300px;
+		}
+	}
+	/*Contacto*/
+	.fondoContacto{
+		padding: 0px 5px;
+	}
+	.contacto{
+		flex-direction: column;
+	}
+
+	.formulario{
+		margin-top: 7rem;
+		padding: 1.5rem;
+
+		h2{
+			font-size: 1.4rem;
+		}
+		label{
+			font-size: 1rem;
+			margin-bottom: 0rem;
+		}
+		input{
+			font-size: 1rem;
+		}
+		select{
+			font-size: 0.8rem;
+		}
+	}
+	.datosContacto{
+		min-width: 20rem;
+		max-height: 15rem;
+
+		h2{
+			font-size:1.7rem;
+		}
+
+		p{
+			font-size:1.1rem;
+		}
+	}
+
+	.col-7{
+		overflow: hidden;
+		position: relative;
+		max-width: 100%;
+
+		iframe{
+			left:0;
+			top:0;
+			height: 19rem;
+			width: 100%;
+		}
+		.fBlanco{
+			height: 100%;
+			width: 100%;
+			margin-top: 3rem;
+			h2{
+				font-size:1.7rem;
+			}
+		}
+	}
+}
+/*Asociarse*/
+
+/*footer*/
+#footer{
+	.footer__tituloEnlaces{
+		font-size: 1rem;
+	}
+	.footer__grid{
+		grid-template-columns: 75% 5% 10%;
+	}
+	.boton{
+		width: auto;
+		font-size: 1rem;
+		padding: .2rem .9rem;
+	}
+
+	.footer__enlaces{
+		padding: 0px 10px;
+
+		ul li a{
+			font-size: 0.8rem;
+		}
+	}
+}
+
+@media all and (min-width:450px){
+	#header{
+		.menu{
+			display: none !important;
+		}
+	}
+}
+
+@media all and (max-width: 450px){
+	/*Header*/
+	#header{
+		height: 70px;
+
+		.botoneraSuperior{
+			border-bottom: none;
+		}
+		.botoneraInferior{
+			visibility: hidden;
+		}
+
+		.menu{
+			font-size: 1.5rem;
+			margin-left: 1.5rem;
+
+			img{
+				width: auto;
+				height: 30px;
+			}
+		}
+		#logo{
+			position: relative;
+			left: 50%;
+		}
+		.tienda{
+			visibility: hidden;
+		}
+
+		.entradas{          
+			visibility: hidden;
+		}
+
+		.buscar{
+			display: none;
+		}
+	}
+	/*Principal*/
+
+	.fondoBlanco{
+		h2{
+			font-size: 1rem !important;
+		}
+
+		p{
+			font-size:0.8rem;
+		}
+	}
+	.mediaMobile{
+		padding: 0rem;
+	}
+	/*Index*/
+	#Portada .cajaTituloPortada h1{
+		font-size: 2rem;        
+	}
+
+	/*Socios*/
+	#socios{
+		h2{
+			font-size: 1rem;
+		}
+		h3{
+			font-size: 1rem;
+		}
+
+		p{
+			font-size: 0.8rem;
+		}
+
+		#asociacion{
+			.fBlanco{
+				flex: 0% !important;
+				max-width: 85%;
+			}
+			.comision{
+				margin-top: 3rem;
+				margin-bottom: 3rem;
+			}
+		}
+
+		.gridEventos{
+			margin: 0rem 0.3rem;
+		}
+		.entidades {
+			padding: 0.2rem 0.4rem;
+			margin: 1rem 0.3rem;
+			flex-direction: row;
+		}
+
+		.escudos{
+			width: 70px;
+		}
+
+		.bandera{
+			width: 80px;
+		}
+
+		.bandera2{
+			width: 80px;
+		}
+	}
+	.formularioAmigo{
+		font-size: 0.9rem;
+
+		input{
+			font-size: 0.9rem;
+			height: 2rem;
+		}
+
+		label{
+			margin-bottom: .2rem;
+			font-size: 0.9rem;
+		}
+		select{
+			font-size: 0.9rem;
+		}
+
+		.tituloRojo{
+			margin-bottom: .25rem !important;
+			h2{
+				font-size: 1.4rem;
+			}
+		}
+		.btn-amigos {
+			font-size: 1rem;
+		}
+		#modoPago{
+			label{
+				margin-bottom: 0.7rem;
+				margin-top: 0.8rem;
+				margin-left: 0.4rem;
+			}
+		}
+	}
+
 		/*Visitas*/
 		.fondoVisitas{
 			padding: 6px;

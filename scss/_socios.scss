@@ -130,9 +130,14 @@
 	background-color: rgba(225, 225, 225, 0.7);
 	padding: 20px;
 	font-size: 1.4rem;
-	width: 50%;
+	width: 80%;
 	height: auto;
 	margin-top: 10%;
+
+	h2{
+		font-size: 1.7rem;
+		margin-bottom: 0px;
+	}
 
 	input{
 		background-color: $fondoMarron;
@@ -140,6 +145,9 @@
 		font-weight: $fuente-light;
 		width: 100%;
 		color: white;
+		border: 1px solid #ced4da;
+		border-radius: .25rem;
+		height: 2.2rem;
 	}
 	.form-control:focus {
 		outline:0;
@@ -148,10 +156,14 @@
 		background-color: $fondoMarron;
 		width: 100%;
 		color: white;
+		height: 2.2rem;
 	}
 	label{
 		font-family: $fuente;
 		font-weight: $fuente-regular;
+		text-align: center;
+		margin-bottom: 0px;
+		font-size: 1.2rem;
 	}
 	option{
 		font-family:$fuente;
@@ -167,6 +179,7 @@
 		border-radius: 4px;
 		font-weight: $fuente-regular;
 		padding: 3px 10px;
+		font-size: 1.3rem;
 	}
 	.desplegableAmigos{
 		font-family:$fuente;
