@@ -10,13 +10,13 @@
 }
 #socios{
 	h2{
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 	h3{
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 	p{
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -92,7 +92,7 @@
 	}
 	.carousel-inner img {
 		margin: 0 auto;
-		width: 88% !important;
+		width: 75% !important;
 	}
 }
 
@@ -103,36 +103,56 @@
 
 	.bandera{
 		width: 110px;
-	}
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 
-	.bandera2{
-		width: 110px;
 	}
 
 	.entidades{
 		background-color: rgba(225, 225, 225, 0.7);
-		width: auto;
+		width: 25%;
 		height: auto;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		padding: 20px;
-		margin: 6rem 0.6rem;
+		margin: 3.5rem 0.6rem;
 	}
 	.tituloEventos{
 		margin-top: 6rem;
 		background-color: rgba(225, 225, 225, 0.9);
 	}
+	.entidadesContenido{
+		p{
+			font-family:$fuente;
+			font-weight: $fuente-regular;
+			text-aling: justify;
+			font-size: 1.3rem;
+		}
+	}
+	.entidadesContacto{
+		h4{
+			font-family:$fuente;
+			font-weight: $fuente-regular;
+			color: $primario;
+			font-size: 1.5rem;
+		}
+
+		svg{
+			width: 40px;
+			height: 40px;
+			margin: 0.5rem;
+		}
+	}
 }
 
 .formularioAmigo{
-	background-color: rgba(225, 225, 225, 0.7);
-	padding: 20px;
+	background-color: rgba(225,225,225,0.7);
+	padding: 1rem 2rem;
 	font-size: 1.4rem;
 	width: 80%;
 	height: auto;
-	margin-top: 10%;
+	margin-top: 7%;
 
 	h2{
 		font-size: 1.7rem;

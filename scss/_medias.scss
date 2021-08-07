@@ -97,7 +97,7 @@
 		}
 	}
 }
-@media all and (max-width: 576px){
+@media all and (max-width: 850px){
 	#header{
 		.botoneraInferior ul li a{
 			font-size: 1.3rem;
@@ -175,8 +175,8 @@
 		}
 
 		p{
-			font-size: 1rem;
-			margin-bottom: 0;
+			font-size: 1.2rem;
+			margin-bottom: 0.2rem;
 		}
 
 
@@ -189,10 +189,27 @@
 			justify-content: space-around;
 			align-items: center;
 			height: auto;
+
+			.asociacion{
+				margin: 0rem 3rem;
+				margin-top: 8.4rem;
+				height: auto;
+			}
+
+			.comision{
+				margin: 3rem;
+				margin-bottom: 0.8rem;
+			}
+			.redes{
+				width: 40%;
+
+				.redes__box{
+					width: 50%;
+					height: 4rem;
+				}
+			}
 		}
-		.comision{
-			margin-top: 0px;
-		}
+		
 		.gridEventos{
 			display: flex;
 			flex-direction: column !important;
@@ -203,18 +220,18 @@
 		}
 		.noche{
 			padding: 0.5rem;
-			margin-top: 10px;
+			margin-top: 1.5rem;
 		}
 		.chocolate{
 			padding: 0.5rem;
-			margin-top: 10px;
+			margin-top: 2rem;
 		}
 		#eventos img {
-			max-height: 200px;
-			width: 300px !important;
+			max-height: 350px;
+			width: auto;
 		}
 		.tituloEventos {
-			margin-top: 1rem;
+			margin-top: 1.8rem;
 		}
 		.boxEntidades{
 			display: flex;
@@ -222,14 +239,26 @@
 		}
 		.entidades {
 			padding: 0.6rem 0.8rem;
-			margin: 1.6rem 1rem;
+			margin: 2.2rem 1rem;
 			flex-direction: row;
+			width: auto;
 
 			p{
 				margin-bottom: 0px;
 			}
 			h3{
-				margin: 1rem;
+				margin: 0.2rem 1rem;
+			}
+			.entidadesContenido{
+				width: 58%;
+			}
+			.entidadesContacto{
+				margin-left: 1rem;
+
+				svg{
+					width: 35px;
+					height: 35px;
+				}
 			}
 		}
 		.escudos{
@@ -238,10 +267,7 @@
 
 		.bandera{
 			width: 90px;
-		}
-
-		.bandera2{
-			width: 90px;
+			margin-bottom: 0.5rem;
 		}
 	}
 
@@ -380,7 +406,6 @@
 		}
 	}
 }
-/*Asociarse*/
 
 /*footer*/
 #footer{
@@ -473,6 +498,7 @@
 	#socios{
 		h2{
 			font-size: 1rem;
+			margin-bottom: 0.1rem;
 		}
 		h3{
 			font-size: 1rem;
@@ -485,33 +511,79 @@
 		#asociacion{
 			.fBlanco{
 				flex: 0% !important;
-				max-width: 85%;
+				margin-top: 4.5rem;
+				padding: .8rem;
 			}
 			.comision{
-				margin-top: 3rem;
-				margin-bottom: 3rem;
+				width: 80%;
+				left: 0.4rem;
+				position: absolute;
+				bottom: 0rem;			
+			}
+			.gridAsociacion{
+				.redes{
+					.redes__box{
+						flex-direction: column;
+						background-color: #52667c;
+						height: 8rem;
+						position: absolute;
+						right: 0.5rem;
+						bottom: 5rem;
+						width: 13%;
+
+						svg{
+							margin: 0.5rem;
+							width: 2rem;
+						}
+					}
+				}
 			}
 		}
 
 		.gridEventos{
 			margin: 0rem 0.3rem;
 		}
-		.entidades {
-			padding: 0.2rem 0.4rem;
-			margin: 1rem 0.3rem;
-			flex-direction: row;
-		}
+		#entidades{
+			.entidades {
+				padding: 0.2rem 0.4rem;
+				margin: 0.8rem 0.3rem;
+				flex-direction: row;
+			}
+			.cajaBandera{
+				width:auto;
 
-		.escudos{
-			width: 70px;
-		}
+				h3{
+					margin: 0.5rem 0rem;	
+				}
+				.escudos{
+					width: 70px;
+				}
 
-		.bandera{
-			width: 80px;
-		}
-
-		.bandera2{
-			width: 80px;
+				.bandera{
+					width: 80px;
+					margin: 0rem;
+				}
+			}
+			.entidadesContenido{
+				width: 80%;
+				p{
+					font-size: 0.8rem;
+					padding: 0.5rem;
+				}
+			}
+			.entidadesContacto{
+				h4{
+					font-size: 1rem;
+				}
+				p{
+					text-align: center;
+				}
+				svg{
+					width: 24px;
+					height: 24px;
+					margin: 0.1rem;
+				}
+			}
 		}
 	}
 	.formularioAmigo{
@@ -548,102 +620,102 @@
 		}
 	}
 
-		/*Visitas*/
-		.fondoVisitas{
-			padding: 6px;
-		}
-		.Horarios{
-			margin: 0%;
+	/*Visitas*/
+	.fondoVisitas{
+		padding: 6px;
+	}
+	.Horarios{
+		margin: 0%;
 
+	}
+	#horariosTarifas{
+		.columnaHorarios1 {
+			font-size: 0.8rem;
+			height: 0.5rem;
 		}
-		#horariosTarifas{
-			.columnaHorarios1 {
-				font-size: 0.8rem;
-				height: 0.5rem;
-			}
-			.fBlanco {
-				padding: 10px;
-			}
-
-			.columnaHorarios2 {
-				font-size: 0.8rem;
-			}
-			.Tarifas {
-				margin-top: 4%;
-			}
-			.columnaTarifas1 {
-				font-size: 0.8rem;
-			}
-			.columnaTarifas2 {
-				font-size: 0.8rem;
-			}
-		}
-		#guiadas{
-			.VisitasG{
-				h2{
-					font-size: 1.2rem;
-				}
-				p{
-					font-size: 1rem;
-					margin: 0px;
-				}
-			}
-			.infoVisitas td {
-				font-size: 0.8rem;
-			}
+		.fBlanco {
+			padding: 10px;
 		}
 
-		#accesibilidad{
+		.columnaHorarios2 {
+			font-size: 0.8rem;
+		}
+		.Tarifas {
+			margin-top: 4%;
+		}
+		.columnaTarifas1 {
+			font-size: 0.8rem;
+		}
+		.columnaTarifas2 {
+			font-size: 0.8rem;
+		}
+	}
+	#guiadas{
+		.VisitasG{
 			h2{
-				font-size: 1rem;
+				font-size: 1.2rem;
 			}
 			p{
-				font-size: 0.8rem;
+				font-size: 1rem;
+				margin: 0px;
 			}
 		}
-		/*footer*/
-		#footer{
-			.footer__grid{
-				display: flex;
-				flex-direction: column;
-				align-items: center;
+		.infoVisitas td {
+			font-size: 0.8rem;
+		}
+	}
 
-				svg{
-					height: 30px;
+	#accesibilidad{
+		h2{
+			font-size: 1rem;
+		}
+		p{
+			font-size: 0.8rem;
+		}
+	}
+	/*footer*/
+	#footer{
+		.footer__grid{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 
+			svg{
+				height: 30px;
+
+			}
+			.boton {
+				padding: .2rem .4rem;
+			}
+			.footer__enlaces{
+				padding: 4px 8px;
+				width: 100%;
+				border-right: none;
+				margin-left:0rem;
+				ul li a{
+					font-size: 0.7rem;
 				}
-				.boton {
+				.footer__tituloEnlaces{
+					font-size: 0.9rem;
+				}
+			}
+
+			.footer__redes{
+				border-bottom: 1px solid #B38F58;
+				border-top: 1px solid #B38F58;
+				width: 80%;
+				justify-content: center !important;
+			}
+
+			.footer__asociarse{
+				margin-top: 6px;
+				button{
 					padding: .2rem .4rem;
-				}
-				.footer__enlaces{
-					padding: 4px 8px;
-					width: 100%;
-					border-right: none;
-					margin-left:0rem;
-					ul li a{
-						font-size: 0.7rem;
-					}
-					.footer__tituloEnlaces{
-						font-size: 0.9rem;
-					}
-				}
-
-				.footer__redes{
-					border-bottom: 1px solid #B38F58;
-					border-top: 1px solid #B38F58;
-					width: 80%;
-					justify-content: center !important;
-				}
-
-				.footer__asociarse{
-					margin-top: 6px;
-					button{
-						padding: .2rem .4rem;
-						a{
-							font-size:1rem;
-						}
+					a{
+						font-size:1rem;
 					}
 				}
 			}
 		}
 	}
+}
