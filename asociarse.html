@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<title>Formá parte del Museo Histórico Regional de la Colonia San José</title>
 	<meta name="description" content="Aquí podrás encontrar la planilla de inscripción para asociarte al Museo Histórico Regional de la Colonia San José. Los socios cuentan con beneficios exclusivos para el ingreso a las instalaciones, así como descuentos en eventos y la tienda del Museo. Hacete amigo!">
-	<meta name="keywords" content=" Museo, Colonia San José, asociarse">
+	<meta name="keywords" content=" Museo, Colonia San José, asociarse, San José, Entre Ríos, Argentina">
 </head>
 <body>
 	<header id="header" class="d-flex flex-column">
@@ -44,23 +44,22 @@
 			</div>
 			<div class=" d-flex flex-row justify-content-between align-items-center entradas">
 				<div class="d-flex flex-row align-items-center mr-1"><img src="media/ticket.png" alt="entrada"></div>
-				<div><a href="visitas.html" style="text-decoration: none; color: white">Entradas<a/></div>
-				</div>
-				<div class="buscar buscador">
-					<form class="form-inline buscador">
-						<input class="form-control mr-sm-2 buscador" type="search" placeholder="Buscar" aria-label="Search">
-					</form>
-				</div>
+				<div><a href="visitas.html" style="text-decoration: none; color: white">Entradas</a></div>
 			</div>
-			<div id="botoneraInferior" class=" d-flex flex-row justify-content-around botoneraInferior">
-				<ul class=" d-flex flex-row justify-content-center p-0 m-0 w-100">
-					<li class="mr-5"><a href="index.html">Inicio</a></li>
-					<li class="mr-5"><a href="nosotros.html">Nosotros</a></li>
-					<li class="mr-5"><a href="socios.html">Socios</a></li>
-					<li class="mr-5"><a href="visitas.html">Visitas</a></li>
-					<li ><a href="Contacto.html">Contacto</a></li>
-				</ul>
+			<div class="buscar buscador">
+				<form class="form-inline buscador">
+					<input class="form-control mr-sm-2 buscador" type="search" placeholder="Buscar" aria-label="Search">
+				</form>
 			</div>
+		</div>
+		<div id="botoneraInferior" class=" d-flex flex-row justify-content-around botoneraInferior">
+			<ul class=" d-flex flex-row justify-content-center p-0 m-0 w-100">
+				<li class="mr-5"><a href="index.html">Inicio</a></li>
+				<li class="mr-5"><a href="nosotros.html">Nosotros</a></li>
+				<li class="mr-5"><a href="socios.html">Socios</a></li>
+				<li class="mr-5"><a href="visitas.html">Visitas</a></li>
+				<li ><a href="Contacto.html">Contacto</a></li>
+			</ul>
 		</div>
 	</header>
 	<!--Contenido Principal-->
@@ -73,25 +72,25 @@
 				<div class="form-row">
 					<div class="col-6 md-6 mb-2">
 						<label for="nombre">Apellido de ascendencia</label>
-						<input type="text" class="">
+						<input type="text" class=""required>
 					</div>
 					<div class="col-6 md-6 mb-2">
 						<label for="nombre">Origen del apellido</label>
-						<input type="text" class="" value="" >
+						<input type="text" class="" value="" required>
 					</div>
 					<div class="col-6 md-6 mb-2">
 						<label for="nombre">Nombre</label>
-						<input type="text" class="" value="" >
+						<input type="text" class="" value=""required >
 					</div>
 					<div class="col-6 md-6 mb-2">
 						<label for="apellido">Apellido</label>
-						<input type="text" class="" value="" >
+						<input type="text" class="" value="" required>
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="col-6 md-6 mb-2">
 						<label for="identificacion">DNI</label>
-						<input type="text" class="" value="" >
+						<input type="text" class="" value="" required>
 					</div>
 					<div class="col-6 md-6 mb-2">
 						<label for="nacimiento">Fecha de nacimiento<small></small></label>
@@ -101,10 +100,10 @@
 				<div class="form-row">
 					<div class="col-4 md-6 mb-2">
 						<label for="ciudad">Ciudad</label>
-						<input type="text" class="">
+						<input type="text" class=""required>
 					</div>
 					<div class="col-5 md-3 mb-2">
-						<label for="validationTooltip05">Provincia</label>
+						<label for="provincia">Provincia</label>
 						<select class="custom-select desplegableAmigos" required>
 							<option selected disabled value=""></option>
 							<option value="Buenos Aires">Buenos Aires</option>
@@ -135,17 +134,17 @@
 					</div>
 					<div class="col-3 md-3 mb-2">
 						<label for="cp">C. P.</label>
-						<input type="text" class="" >
+						<input type="text" class="" required>
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="col-6 md-6 mb-2">
 						<label for="telefono">Teléfono</label>
-						<input type="text" class=""  value="">
+						<input type="text" class=""  value="" required>
 					</div>
 					<div class="col-6 md-6 mb-2">
 						<label for="mail">Mail</label>
-						<input type="Email" class="" value="">
+						<input type="Email" class="" value="" required>
 					</div>
 					<div class="col-4 md-4 mb-2">
 						<label for="frecPago">Frecuencia de pago</label>
@@ -204,7 +203,6 @@
 						<li><a href="visitas.html#horariosTarifas">Horarios y tarifas</a></li>
 						<li><a href="visitas.html#guiadas">Visitas guiadas</a></li>
 						<li><a href="visitas.html#accesibilidad">Museo accesible</a></li>
-						<li><a href="visitas.html#testimonios">Testimonios</a></li>
 					</ul>
 				</div>
 				<div class="footer__redes d-flex justify-content-around">

@@ -105,7 +105,7 @@
 
 		#logo{
 			position: relative;
-			right: 29%;
+			right: 3rem;
 
 			img{
 				min-width: 61.6px;
@@ -116,6 +116,8 @@
 			padding-right: 0.1em;
 			padding-left: 0.1em;
 			margin-left: 3rem;
+			position: relative;
+			right: 7rem;
 
 			img{
 				width:16px;
@@ -123,6 +125,8 @@
 		}
 		.entradas{          
 			font-size: 1.2rem;
+			position: relative;
+			right: 12rem;
 
 			.entradas img{
 				height: 24px;
@@ -130,7 +134,7 @@
 		}
 		.buscar{
 			position: fixed;
-			left: 106px;
+			right: 3rem;
 			top: 14px;
 		}
 	}
@@ -148,10 +152,6 @@
 
 		p{
 			font-size:0.9rem;
-		}
-		img {
-			max-height: 300px;
-			width: auto;
 		}
 	}
 	.mediaMobile{
@@ -204,8 +204,9 @@
 				width: 40%;
 
 				.redes__box{
-					width: 50%;
-					height: 4rem;
+					width: 8rem;
+					height: 3rem;
+					right: 8rem;
 				}
 			}
 		}
@@ -405,27 +406,37 @@
 			}
 		}
 	}
-}
 
-/*footer*/
-#footer{
-	.footer__tituloEnlaces{
-		font-size: 1rem;
+	/*Tienda*/
+	.cajaTienda{
+		max-width:80% !important;
 	}
-	.footer__grid{
-		grid-template-columns: 75% 5% 10%;
-	}
-	.boton{
-		width: auto;
-		font-size: 1rem;
-		padding: .2rem .9rem;
+	.contenidoTienda{
+		flex-direction: column !important;
+		align-items: center;
 	}
 
-	.footer__enlaces{
-		padding: 0px 10px;
+	/*footer*/
+	#footer{
+		.footer__tituloEnlaces{
+			font-size: 1rem;
+		}
+		.footer__grid{
+			grid-template-columns: 75% 5% 10%;
 
-		ul li a{
-			font-size: 0.8rem;
+			.boton{
+				width: auto;
+				font-size: 1rem;
+				padding: .2rem .9rem;
+			}
+
+			.footer__enlaces{
+				padding: 0px 10px;
+
+				ul li a{
+					font-size: 0.8rem;
+				}
+			}
 		}
 	}
 }
@@ -505,7 +516,7 @@
 		}
 
 		p{
-			font-size: 0.74rem;
+			font-size: 0.8rem;
 		}
 
 		#asociacion{
@@ -522,8 +533,9 @@
 				width: 85%;
 				left: 0.4rem;
 				position: absolute;
-				bottom: 0rem;
-				}
+				bottom: 1rem;
+				height: auto;
+			}
 			.gridAsociacion{
 				.redes{
 					.redes__box{
@@ -531,9 +543,9 @@
 						background-color: #52667c;
 						height: 8rem;
 						position: absolute;
-						right: 0.5rem;
+						right: 0.4rem;
 						bottom: 5rem;
-						width: 13%;
+						width: 10%;
 
 						svg{
 							margin: 0.5rem;
@@ -544,15 +556,27 @@
 			}
 		}
 
-		.gridEventos{
-			margin: 0rem 0.3rem;
-		}
-		#entidades{
-			.entidades {
-				padding: 0.2rem 0.4rem;
-				margin: 0.8rem 0.3rem;
-				flex-direction: row;
+		#eventos{
+			.tituloEventos{
+				margin: 1rem 0rem;
 			}
+			.gridEventos{
+				margin: 0rem 0.3rem;
+
+				.noche{
+					margin-top:0rem;
+				}
+
+				.chocolate{
+					margin-top: 1rem;
+				}
+			}
+		}
+		.entidades {
+			padding: 0.2rem 0.4rem;
+			margin: 1.2rem 0.3rem;
+			flex-direction: row;
+
 			.cajaBandera{
 				width:auto;
 
@@ -571,7 +595,7 @@
 			.entidadesContenido{
 				width: 80%;
 				p{
-					font-size: 0.8rem;
+					font-size: 0.8rem !important;
 					padding: 0.5rem;
 				}
 			}
@@ -590,6 +614,7 @@
 			}
 		}
 	}
+
 	.formularioAmigo{
 		font-size: 0.9rem;
 
@@ -677,6 +702,8 @@
 			font-size: 0.8rem;
 		}
 	}
+
+
 	/*footer*/
 	#footer{
 		.footer__grid{

@@ -15,9 +15,29 @@
 	
 }
 .cajaTienda{
-	background-color: rgba(225, 225, 225, 0.9);
-	color: $primario;
-	font-family: $fuente;
-	font-weight: $fuente-bold;
-	text-align: center;
+	background-color: rgba(225, 225, 225, 0.7);
+	padding: 0.2rem;
+	height: auto;
+	width: auto;
+	margin: 1rem 2rem;
+
+	h3{
+		text-align:center;
+		color: $secundario;
+		font-weight: $fuente-regular;
+	}
+	.imgTienda{
+		width: 20%;
+		margin: 0.3rem;
+	}
 }
+.zoom {
+	transition: transform .2s; 
+}
+
+.zoom:hover {
+	transform: scale(2); 
+}
+
+
+

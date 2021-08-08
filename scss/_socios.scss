@@ -47,8 +47,12 @@
 			background-color: rgba(225, 225, 225, 0.7);
 			padding: 1.5rem;
 			margin-top: 100px;
-			height: auto;
+			height: 30rem;
 			width: auto;
+
+			p{
+				margin-bottom: 0.5rem;
+			}
 		}
 
 		.redes{
@@ -57,10 +61,12 @@
 		}
 	}
 	.redes__box{
-		width: 80%;
+		width: 11rem;
 		height:4rem;
 		background-color: $secundario;
 		border-radius: 8px;
+		position: absolute;
+		bottom: 2rem;
 	}
 }
 
@@ -169,15 +175,14 @@
 		border-radius: .25rem;
 		height: 2.2rem;
 	}
-	.form-control:focus {
-		outline:0;
-	}
+
 	select{
 		background-color: $fondoMarron;
 		width: 100%;
 		color: white;
 		height: 2.2rem;
 	}
+
 	label{
 		font-family: $fuente;
 		font-weight: $fuente-regular;
@@ -185,6 +190,7 @@
 		margin-bottom: 0px;
 		font-size: 1.2rem;
 	}
+
 	option{
 		font-family:$fuente;
 		font-weight: $fuente-light;
@@ -207,6 +213,13 @@
 	}
 	.btn-amigos:focus {outline:0;}
 
+	input:focus, select:focus{
+
+		outline:none !important;
+
+		outline-width: 0 !important;
+
+	}
 }
 
 
