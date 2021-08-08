@@ -505,21 +505,25 @@
 		}
 
 		p{
-			font-size: 0.8rem;
+			font-size: 0.74rem;
 		}
 
 		#asociacion{
+			p{
+				margin:0rem;
+			}
 			.fBlanco{
 				flex: 0% !important;
+				margin: 0rem;
 				margin-top: 4.5rem;
 				padding: .8rem;
 			}
 			.comision{
-				width: 80%;
+				width: 85%;
 				left: 0.4rem;
 				position: absolute;
-				bottom: 0rem;			
-			}
+				bottom: 0rem;
+				}
 			.gridAsociacion{
 				.redes{
 					.redes__box{
