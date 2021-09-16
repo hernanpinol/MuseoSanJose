@@ -1,0 +1,46 @@
+.fondoFaq{
+	height: 100vh; 	
+	background-image: url(../media/Fondos/fondoFaq.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 3px;
+	overflow: hidden;
+}
+
+.contenidoFaq ul li {
+    list-style: none;
+  }
+  
+  .contenidoFaq img{
+      width: 3%;
+      margin: .3rem .5rem;
+  }
+  
+  .faq{
+      background-color: rgba(225, 225, 225, 0.7);
+      padding: 1rem 2rem;
+      height: auto;
+      max-width: 800px;
+      margin: 1rem 2rem;
+  }
+  
+  .pregunta{
+      background: #d1b08d;
+      font-weight: 600;
+      font-size: 1.4rem;
+      border-bottom: 1px #b89561 solid;
+      cursor: pointer;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+  .respuesta{
+      background: #ece8e8ad;
+      display: none;
+      padding: 0.5rem 1rem;
+      font-size: 1.3rem;
+      font-weight: 300;
+  }
+  

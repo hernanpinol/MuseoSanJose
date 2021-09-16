@@ -1,82 +1,144 @@
-.fondoContacto{
-	height: 100vh; 	
-	background-image: url(../media/Fondos/fondoContacto.JPG);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	padding: 25px;
-	margin-top: 3px;
-	overflow: hidden;
+.fondoContacto {
+  height: 100vh;
+  background-image: url(../media/Fondos/fondoContacto.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  margin-top: 3px;
+  overflow: hidden;
 }
-.formulario{
-	background-color: rgba(225, 225, 225, 0.7);
-	padding: 3rem;
-	font-size: 20px;
-	width: 30rem;
-	height: auto;
-	margin-top: 7rem;
+.formulario {
+  background-color: rgba(225, 225, 225, 0.7);
+  padding: 3rem;
+  font-size: 20px;
+  width: 30rem;
+  height: auto;
+  margin-top: 7rem;
 }
 
-.datosContacto{
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(225, 225, 225, 0.7);
-	padding: 30px 40px;
-	display: flex;
-	height: 40%;
-	width: auto;
-	line-height: 1.7;
+.datosContacto {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(225, 225, 225, 0.7);
+  padding: 30px 40px;
+  display: flex;
+  height: 40%;
+  width: auto;
+  line-height: 1.7;
 
-	p{
-		font-size:1.5rem;
+  p {
+    font-size: 1.5rem;
+  }
+  h2 {
+    margin-bottom: 1.2rem;
+  }
+}
+.mapa {
+  iframe {
+    width: 100%;
+    height: 30rem;
+  }
+  .fBlanco {
+    width: 80%;
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.checkbox {
+  width: 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 10rem;
+}
+
+input {
+  background-color: #d4b08d;
+  font-family: $fuente;
+  font-weight: $fuente-regular;
+  width: 100%;
+  border: 1px solid #ced4da;
+  font-size: 1.2rem;
+}
+.backgroudBotones {
+  background-color: #b38f58;
+  font-family: $fuente;
+  font-weight: $fuente-regular;
+  color: white;
+  width: 45%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.2rem;
+}
+
+select {
+  font-size: 16px;
+}
+
+.fondoDatos {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/media/Fondos/Datos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 0.2rem solid #524949f0;
+  border-radius: 3px;
+  box-shadow: 9px 12px #34343482;
+}
+
+#datosFondoBl {
+  h2 {
+    color: $primario;
+    font-family: $fuente;
+    font-weight: $fuente-bold;
+    text-align: center;
+  }
+}
+  .cajaDatos {
+    background-color: rgba(225, 225, 225, 0.7);
+    padding: 1rem;
+    box-sizing: content-box;
+    text-align: center;
+    font-size: 25px;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+.alerta {
+  border: 1px solid $primario;
+  background-color: $primario;
+}
+
+.cajaFAQ{
+	background-color: rgba(225,225,225,0.7);
+    position: absolute;
+    right: 35px;
+    bottom: 100px;
+    width: 14rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1em;
+
+	p a{
+		text-decoration: none;
+		color: black;
+		font-weight: $fuente-semibold;
 	}
-	h2{
-		margin-bottom: 1.2rem;
-	}
-}
-.mapa{
-	iframe{
-		width: 100%;
-		height: 30rem;
-	}
-	.fBlanco{
-		width: 80%;
-	}
-	h2{
-		margin-bottom: 1rem;
-	}
-}
-
-
-.checkbox{
-	width: 20px;
-}
-
-textarea{
-	width: 100%;
-	min-height: 10rem;
-}
-
-input{
-	background-color: #D4B08D;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 400;
-	width: 100%;
-	border: 1px solid #ced4da;
-	font-size: 1.2rem;
-}
-.backgroudBotones{
-	background-color: #B38F58;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 400;
-	color: white;
-	width: 45%;
-	border: 1px solid transparent;
-	border-radius: 4px;
-	padding: 0.2rem;
-}
-
-select{
-	font-size: 16px;
 }

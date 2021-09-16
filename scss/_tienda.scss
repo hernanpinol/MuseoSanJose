@@ -1,43 +1,153 @@
-.fondoTienda{
-	height: 100vh; 	
-	background-image: url(../media/Fondos/fondoTienda.JPG);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	margin-top: 3px;
-	overflow: hidden;
+.fondoTienda {
+  height: 100vh;
+  background-image: url(/media/Fondos/fondoTienda.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 3px;
+  overflow: hidden;
 }
 
-.tituloTienda{
-	margin-top: 8rem;
-	background-color: rgba(225, 225, 225, 0.9);
-	text-align: center;
-	
+.tituloTienda {
+  margin-top: 8rem;
+  background-color: rgba(225, 225, 225, 0.9);
+  text-align: center;
 }
-.cajaTienda{
-	background-color: rgba(225, 225, 225, 0.7);
-	padding: 0.2rem;
-	height: auto;
-	width: auto;
-	margin: 1rem 2rem;
+.cajaTienda {
+  background-color: rgba(225, 225, 225, 0.7);
+  padding: 0.2rem;
+  height: auto;
+  width: auto;
+  margin: 1rem 2rem;
+}
 
-	h3{
-		text-align:center;
-		color: $secundario;
-		font-weight: $fuente-regular;
-	}
-	.imgTienda{
-		width: 20%;
-		margin: 0.3rem;
-	}
+.tituloCaja {
+  text-align: center;
+  color: $secundario;
+  font-weight: $fuente-regular;
+}
+.imgTienda {
+  width: 90%;
+  margin: 0.3rem;
+}
+.cajaProducto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.divElementos {
+  width: auto;
+  height: auto;
+}
+.precios {
+  font-family: "Oswald", sans-serif;
+  font-weight: $fuente-semibold;
+  text-align: center;
+}
+
+.cajaMerchandising {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .zoom {
-	transition: transform .2s; 
+  transition: transform 0.2s;
 }
 
 .zoom:hover {
-	transform: scale(2); 
+  transform: scale(2);
 }
 
+/*modal*/
+.modal {
+  background-color: rgba(43, 37, 37, 0.7);
+}
+.modal-dialog {
+  margin: 2rem auto;
+}
 
+.modalDescripcion {
+  font-size: 1rem;
+  color: black;
+  width: 55%;
+  text-align: justify;
+}
 
+.modalImagen {
+  width: 40%;
+}
+
+.modal-header {
+  justify-content: space-between;
+  padding: 0.7rem;
+  background: linear-gradient(
+    180deg,
+    rgba(184, 148, 96, 1) 0%,
+    rgba(217, 186, 157, 1) 100%
+  );
+}
+.modal-title {
+  font-size: 1.5rem;
+  margin: 0.2rem auto;
+}
+.btn-close {
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  background-color: transparent;
+  font-size: 0.7rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+  background-color: rgba(225, 225, 225, 0.7);
+}
+.precio {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.informacionPago {
+  width: 77%;
+  border-right: solid 2px $terciario;
+}
+
+.modal-footer {
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(184, 148, 96, 1) 0%,
+    rgba(217, 186, 157, 1) 100%
+  );
+}
+
+.informacionPago p {
+  color: black;
+  font-size: 1.25rem;
+}
+.informacionPago strong {
+  color: #52667c;
+  font-weight: 600;
+}
+
+.btnComprar {
+  background-color: $primario;
+  border: 2px solid $primario;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  width: 17%;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: white;
+  }
+}
