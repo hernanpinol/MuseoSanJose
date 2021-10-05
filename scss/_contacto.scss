@@ -122,14 +122,14 @@ select {
 
 
 .alerta {
-  border: 1px solid $primario;
-  background-color: $primario;
+  border: 1px solid $primario !important;
+  background-color: $primario !important;
 }
 
 .cajaFAQ{
 	background-color: rgba(225,225,225,0.7);
     position: absolute;
-    right: 35px;
+    right: 130px;
     bottom: 100px;
     width: 14rem;
     padding: 1rem;

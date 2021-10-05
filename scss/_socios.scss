@@ -1,226 +1,231 @@
-.fondoSocios{
-	height: 100vh; 	
-	background-image: url(../media/Fondos/fondoSocios.JPG);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	margin-top: 3px;
-	padding: 35px;
-	overflow: hidden;
+.fondoSocios {
+  height: 100vh;
+  background-image: url(../media/Fondos/fondoSocios.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 3px;
+  padding: 35px;
+  overflow: hidden;
 }
-#socios{
-	h2{
-		font-size: 1.5rem;
-	}
-	h3{
-		font-size: 1.5rem;
-	}
-	p{
-		font-size: 1.2rem;
-	}
-}
-
-#asociacion{
-	.gridAsociacion{
-		display: grid;
-		height: 100vh;
-		grid-template-areas: 
-		"asociacion comision" 
-		"asociacion redes";
-		grid-template-columns: 50% 40%;
-		grid-template-rows: 60% 40%;
-		column-gap: 10%;
-		justify-items: center;
-		
-
-		.asociacion{
-			grid-area: asociacion;
-			background-color: rgba(225, 225, 225, 0.7);
-			padding: 1.5rem;
-			margin-top: 100px;
-			height: 500px;
-			width: auto;
-		}
-
-		.comision{
-			grid-area: comision;
-			background-color: rgba(225, 225, 225, 0.7);
-			padding: 1.5rem;
-			margin-top: 100px;
-			height: 30rem;
-			width: auto;
-
-			p{
-				margin-bottom: 0.5rem;
-			}
-		}
-
-		.redes{
-			grid-area: redes;
-			width: 60%;
-		}
-	}
-	.redes__box{
-		width: 11rem;
-		height:4rem;
-		background-color: $secundario;
-		border-radius: 8px;
-		position: absolute;
-		bottom: 2rem;
-	}
+#socios {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
 }
 
-#eventos{
-	.tituloEventos{
-		margin-top: 2rem;
-		background-color: rgba(225, 225, 225, 0.9);
-	}
-	.gridEventos{
-		display: grid;
-		grid-template-areas: 
-		"noche chocolate"; 
-		grid-template-columns: 49% 49%;
-		column-gap: 2%;
-	}
+#asociacion {
+  .gridAsociacion {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+      "asociacion comision"
+      "asociacion redes";
+    grid-template-columns: 50% 40%;
+    grid-template-rows: 60% 40%;
+    column-gap: 10%;
+    justify-items: center;
 
-	.noche{
-		grid-area: noche;
-		background-color: rgba(225, 225, 225, 0.7);
-		padding: 25px;
-		margin-top: 1rem;
-	}
+    .asociacion {
+      grid-area: asociacion;
+      background-color: rgba(225, 225, 225, 0.7);
+      padding: 1.5rem;
+      margin-top: 100px;
+      height: 500px;
+      width: auto;
+    }
 
-	.chocolate{
-		grid-area: chocolate;
-		background-color: rgba(225, 225, 225, 0.7);
-		padding: 25px;
-		margin-top: 1rem;
-	}
-	.carousel-inner img {
-		margin: 0 auto;
-		width: 75% !important;
-	}
+    .comision {
+      grid-area: comision;
+      background-color: rgba(225, 225, 225, 0.7);
+      padding: 1.5rem;
+      margin-top: 100px;
+      height: 30rem;
+      width: auto;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .redes {
+      grid-area: redes;
+      width: 60%;
+    }
+  }
+  .redes__box {
+    width: 11rem;
+    height: 4rem;
+    background-color: $secundario;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 2rem;
+  }
 }
 
-#entidades{
-	.escudos{
-		width: 100px;
-	}
+#eventos {
+  .tituloEventos {
+    margin-top: 2rem;
+    background-color: rgba(225, 225, 225, 0.9);
+  }
+  .gridEventos {
+    display: grid;
+    grid-template-areas: "noche chocolate";
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+  }
 
-	.bandera{
-		width: 110px;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
+  .noche {
+    grid-area: noche;
+    background-color: rgba(225, 225, 225, 0.7);
+    padding: 25px;
+    margin-top: 1rem;
+  }
 
-	}
-
-	.entidades{
-		background-color: rgba(225, 225, 225, 0.7);
-		width: 25%;
-		height: auto;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 20px;
-		margin: 3.5rem 0.6rem;
-	}
-	.tituloEventos{
-		margin-top: 6rem;
-		background-color: rgba(225, 225, 225, 0.9);
-	}
-	.entidadesContenido{
-		p{
-			font-family:$fuente;
-			font-weight: $fuente-regular;
-			text-aling: justify;
-			font-size: 1.3rem;
-		}
-	}
-	.entidadesContacto{
-		h4{
-			font-family:$fuente;
-			font-weight: $fuente-regular;
-			color: $primario;
-			font-size: 1.5rem;
-		}
-
-		svg{
-			width: 40px;
-			height: 40px;
-			margin: 0.5rem;
-		}
-	}
+  .chocolate {
+    grid-area: chocolate;
+    background-color: rgba(225, 225, 225, 0.7);
+    padding: 25px;
+    margin-top: 1rem;
+  }
+  .carousel-inner img {
+    margin: 0 auto;
+    width: 75% !important;
+  }
 }
 
-.formularioAmigo{
-	background-color: rgba(225,225,225,0.7);
-	padding: 1rem 2rem;
-	font-size: 1.4rem;
-	width: 80%;
-	height: auto;
-	margin-top: 7%;
+#entidades {
+  .escudos {
+    width: 100px;
+  }
 
-	h2{
-		font-size: 1.7rem;
-		margin-bottom: 0px;
-	}
+  .bandera {
+    width: 110px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
-	input{
-		background-color: $fondoMarron;
-		font-family:$fuente;
-		font-weight: $fuente-light;
-		width: 100%;
-		color: white;
-		border: 1px solid #ced4da;
-		border-radius: .25rem;
-		height: 2.2rem;
-	}
+  .entidades {
+    background-color: rgba(225, 225, 225, 0.7);
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 3.5rem 0.6rem;
+  }
+  .tituloEventos {
+    margin-top: 6rem;
+    background-color: rgba(225, 225, 225, 0.9);
+  }
+  .entidadesContenido {
+    p {
+      font-family: $fuente;
+      font-weight: $fuente-regular;
+      text-align: justify;
+      font-size: 1.3rem;
+    }
+  }
+  .entidadesContacto {
+    h4 {
+      font-family: $fuente;
+      font-weight: $fuente-regular;
+      color: $primario;
+      font-size: 1.5rem;
+    }
 
-	select{
-		background-color: $fondoMarron;
-		width: 100%;
-		color: white;
-		height: 2.2rem;
-	}
-
-	label{
-		font-family: $fuente;
-		font-weight: $fuente-regular;
-		text-align: center;
-		margin-bottom: 0px;
-		font-size: 1.2rem;
-	}
-
-	option{
-		font-family:$fuente;
-		font-weight: $fuente-light;
-	}
-	.btn-amigos{
-		display: inline-block;
-		background-color: $primario;
-		text-align: center;
-		vertical-align: middle;
-		color: $texto2;
-		border: 1px solid transparent;
-		border-radius: 4px;
-		font-weight: $fuente-regular;
-		padding: 3px 10px;
-		font-size: 1.3rem;
-	}
-	.desplegableAmigos{
-		font-family:$fuente;
-		font-weight: $fuente-light;
-	}
-	.btn-amigos:focus {outline:0;}
-
-	input:focus, select:focus{
-
-		outline:none !important;
-
-		outline-width: 0 !important;
-
-	}
+    svg {
+      width: 40px;
+      height: 40px;
+      margin: 0.5rem;
+    }
+  }
 }
 
+//Asociarse
+.fondoAsociarse {
+  height: 100vh;
+  background-image: url(../media/Fondos/fondoAsociarse.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 3px;
+  padding: 35px;
+  overflow: hidden;
+}
+.formularioAmigo {
+  background-color: rgba(225, 225, 225, 0.7);
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  width: 80%;
+  height: auto;
+  margin-top: 7%;
 
+  h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+  }
 
+  input {
+    background-color: $fondoMarron;
+    font-family: $fuente;
+    font-weight: $fuente-light;
+    width: 100%;
+    color: white;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    height: 2.2rem;
+  }
+
+  select {
+    background-color: $fondoMarron;
+    width: 100%;
+    color: white;
+    height: 2.2rem;
+  }
+
+  label {
+    font-family: $fuente;
+    font-weight: $fuente-regular;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+  }
+
+  option {
+    font-family: $fuente;
+    font-weight: $fuente-light;
+  }
+  .btn-amigos {
+    display: inline-block;
+    background-color: #95192f;
+    vertical-align: middle;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 400;
+    padding: 3px 10px;
+    font-size: 1.3rem;
+  }
+  .desplegableAmigos {
+    font-family: $fuente;
+    font-weight: $fuente-light;
+  }
+  .btn-amigos:focus {
+    outline: 0;
+  }
+
+  input:focus,
+  select:focus {
+    outline: none !important;
+
+    outline-width: 0 !important;
+  }
+}

@@ -5,6 +5,8 @@ const areaTexto = document.querySelector('#areaTexto')
 
 const validarFormulario = e => {
   e.preventDefault()
+  $('input').removeClass('alerta')
+  $('textarea').removeClass('alerta')
   //Datos vacios
   if (nombreUsuario.value === '') {
     nombreUsuario.classList.add('alerta')
@@ -13,6 +15,7 @@ const validarFormulario = e => {
   }
 
   //email
+
   if (!emailValido(emailUsuario.value)) {
     emailUsuario.classList.add('alerta')
     console.log('Completar email')
@@ -32,38 +35,39 @@ const validarFormulario = e => {
     return false
   }
 
-  guardarConsulta()
-
+  //Cartel de Confirmación (ejecución)
   setTimeout(() => {
     CartelConfirmacion()
   }, 1500)
-  
-  $("form select").each(function() { this.selectedIndex = 0 });
-  $("form input[type=text],form input [type=checkbox],form input [type=email] , form textarea").each(function() { this.value = '' });
-    return true
+
+  //Borrar datos del formulario
+  $('#formularioContacto')[0].reset()
+
+  return true
 }
 
 const emailValido = email => {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
-$('#cajaDatos').hide()
-
 function CartelConfirmacion () {
   let datosFondoBl = $('#datosFondoBl')
   datosFondoBl.append(
     '<h2>Gracias por contactarnos!</h2><p>Recibiras una respuesta a la brevedad</p>'
   )
-
   $('#cajaDatos').show()
-
-  $(document).on('click', function (e) {
-    let cajaDatos = $('#cajaDatos')
-    if (!cajaDatos.is(e.target) && cajaDatos.has(e.target).length === 0) {
-      $('#cajaDatos').hide()
-    }
-  })
+  $('#faq').hide()
 }
+
+//Ocultar cartel de confirmación al hacer click afuera del mismo
+$(document).on('click', function (e) {
+  let cajaDatos = $('#cajaDatos')
+  if (!cajaDatos.is(e.target) && cajaDatos.has(e.target).length === 0) {
+    $('#cajaDatos').hide()
+    $('#faq').show()
+    $('#datosFondoBl').empty()
+  }
+})
 
 function reseteo () {
   nombreUsuario.classList.remove('alerta')
@@ -75,33 +79,4 @@ function reseteo () {
 $('#btnEnviar').on('click', validarFormulario)
 $('#btnResetear').on('click', reseteo)
 
-
-
-function guardarConsulta () {
-  let nombre = nombreUsuario.value,
-    email = emailUsuario.value,
-    telefono = telefonoUsuario.value,
-    texto = areaTexto.value
-
-  addConsulta(nombre, email, telefono, texto)
-}
-
-let arrayConsulta = []
-
-function addConsulta (nombre, email, telefono, texto) {
-  const consulta = {
-    nombre: nombre,
-    email: email,
-    telefono: telefono,
-    texto: texto
-  }
-  arrayConsulta.push(consulta)
-
-  localStorage.setItem('Lista de Consultas', JSON.stringify(arrayConsulta))
-
-  const consultasAlmacenadas = JSON.parse(
-    localStorage.getItem('Lista de Consultas')
-  )
-  console.log(consultasAlmacenadas)
-}
-
+$('#cajaDatos').hide()

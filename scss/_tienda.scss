@@ -49,11 +49,11 @@
   grid-template-columns: repeat(4, 1fr);
 }
 .zoom {
-  transition: transform 0.2s;
+  transition: transform 0.4s;
 }
 
 .zoom:hover {
-  transform: scale(2);
+  transform: scale(2.5);
 }
 
 /*modal*/
