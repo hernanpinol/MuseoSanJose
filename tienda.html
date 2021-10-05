@@ -22,6 +22,23 @@
 	<!--Barra de Menu-->
 	<header id="header" class="d-flex flex-column">
 		<div class="d-flex flex-row justify-content-around align-items-center botoneraSuperior">
+			<div class=" d-flex-row align-items-center menu">
+				<div class="dropdown">
+					<button class=" d-flex flex-row menu btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<div class="d-flex flex-row align-items-center"><img src="media/menu.png" alt="Menu"></div>
+						<div >Menu</div>
+					</button>
+					<div class="dropdown-menu menuStile" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item " href="index.html">Inicio</a>
+						<a class="dropdown-item barraItems" href="nosotros.html">Nosotros</a>
+						<a class="dropdown-item barraItems" href="socios.html">Socios</a>
+						<a class="dropdown-item barraItems" href="visitas.html">Visitas</a>
+						<a class="dropdown-item barraItems" href="contacto.html">Contacto</a>
+						<a class="dropdown-item barraItems" href="tienda.html">Tienda</a>
+						<a class="dropdown-item barraItems " href="visitas.html">Entradas</a>
+					</div>
+				</div>
+			</div>
 			<div id="logo">
 				<a href="index.html"> <img src="media/Escudos/EscudoMuseo.png" alt="Logo Museo" class="img-fluid"
 						style="max-height: 60px; min-height: 50px;"></a>
@@ -151,9 +168,9 @@
 					</div>
 				</div>
 				<div class="footer__asociarse d-flex justify-content-center align-items-center">
-					<button type="button" href="asociarse.html" class="btn btn-lg boton"><a href="asociarse.html">Hazte
-							amigo!</a></button>
-				</div>
+					<div class="footer__asociarse d-flex justify-content-center align-items-center">
+						<button type="button" href="asociarse.html" class="btn btn-lg boton"><a href="asociarse.html">Hazte amigo!</a></button>
+					</div>
 			</div>
 		</footer>
 	</div>
